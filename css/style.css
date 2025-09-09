@@ -556,6 +556,15 @@ ul { list-style: none; }
   display: block;
 }
 
+.hero-image000 {
+    width: 200px;
+  height: 400px;
+
+  display: block;
+  object-fit: cover;
+}
+
+
 @media (max-width: 1095px) {
   .hero-container {
     flex-direction: column;
@@ -2106,6 +2115,7 @@ html {
 
 
 /* ================== Custom Page CSS End ================== */
+
 
 
 
