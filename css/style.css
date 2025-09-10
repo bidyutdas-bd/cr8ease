@@ -1808,12 +1808,23 @@ html {
   margin-bottom: 15px;
   text-align: left;
 }
+.intro-image {
+
+ display: flex;
+  justify-content: center; 
+  align-items: center;
+
+}
 
 .intro-image img {
-  width: 100%;
+  width: 500px;      /* fixed width */
+  height: 700px;     /* or 500px for square */
+  max-width: 100%;   /* prevents overflow on small screens */
+  max-height: 100%;  /* keeps inside parent */
   border-radius: 15px;
-  object-fit: cover;
+  object-fit: cover; /* crops nicely without distortion */
 }
+
 
 /* Pricing / Packages Section */
 .business-packages {
@@ -2115,6 +2126,7 @@ html {
 
 
 /* ================== Custom Page CSS End ================== */
+
 
 
 
