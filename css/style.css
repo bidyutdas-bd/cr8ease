@@ -2126,14 +2126,14 @@ html {
   display: flex;
   justify-content: center; 
   align-items: center;
-  height: 600px;
+  height: 500px;
   padding-top: 20%;
 
 }
 
 .intro-image img {
   width: 500px;      /* fixed width */
-  height: 800px;     /* or 500px for square */
+  height: 600px;     /* or 500px for square */
   max-width: 100%;   /* prevents overflow on small screens */
   max-height: 100%;  /* keeps inside parent */
   border-radius: 15px;
@@ -2497,6 +2497,7 @@ html {
 
 
 /* ================== Custom Page CSS End ================== */
+
 
 
 
