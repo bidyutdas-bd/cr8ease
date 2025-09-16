@@ -1155,6 +1155,7 @@ body {
 
 /* Container inside footer (capped width) */
 .footer-container {
+  width: 100%;
   max-width: 1200px;   /* limit content width */
   margin: 0 auto;      /* center the container */
   display: grid;
@@ -2995,6 +2996,7 @@ body {
 
 
 /* ================== Case Study Page CSS End ================== */
+
 
 
 
