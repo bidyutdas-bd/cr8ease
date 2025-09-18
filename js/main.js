@@ -187,16 +187,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // Service Card Clickable in Home Page - Service Section
-const cards = document.querySelectorAll('.service-card');
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll('.service-card');
 
-cards.forEach(card => {
-  card.addEventListener('click', function(e) {
-    // Prevent the inner link from triggering twice
-    if(e.target.tagName !== 'A') {
-      window.location = card.dataset.link;
-    }
+  cards.forEach(card => {
+    card.addEventListener('click', function(e) {
+      if(e.target.tagName !== 'A') {
+        window.location = card.dataset.link;
+      }
+    });
   });
 });
+
 
 
 
