@@ -509,25 +509,25 @@ ul { list-style: none; }
 }
 
 .btn-primary {
-  background: transparent;
-  border: 2px solid #1ba6cc;
-  color: #1ba6cc;
+  background: #1ba6cc;
+  color: #fff;
 }
 
 .btn-primary:hover {
-  background: #1ba6cc;
-  color: #fff;
-}
-
-.btn-secondary {
   background: transparent;
   border: 2px solid #1ba6cc;
   color: #1ba6cc;
 }
 
-.btn-secondary:hover {
+.btn-secondary {
   background: #1ba6cc;
   color: #fff;
+}
+
+.btn-secondary:hover {
+  background: transparent;
+  border: 2px solid #1ba6cc;
+  color: #1ba6cc;
 }
 
 /* Right Column */
@@ -575,6 +575,8 @@ ul { list-style: none; }
   transform: translateY(-10px) scale(1.05);
   box-shadow: 0 20px 40px rgba(34, 206, 254, 0.6), 0 0 30px #1ba6cc;
 }
+
+
 
 /* ===========================
    Responsive Breakpoints
@@ -1024,6 +1026,7 @@ body {
   overflow: hidden;
   box-shadow: 0 6px 20px rgba(0,0,0,0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 .blog-card:hover {
@@ -1091,7 +1094,7 @@ body {
 =========================== */
 .cta-section {
   position: relative;
-  background: linear-gradient(135deg, #142434, #1ba6cc);
+  background: linear-gradient(135deg, #0c0e1f 50%, #22cefe);
   color: #fff;
   height: 50vh;
   display: flex;
@@ -1120,15 +1123,15 @@ body {
   text-decoration: none;
   transition: 0.3s ease;
   display: inline-block;
-  background: #fff;         /* Standout from gradient background */
-  color: #142434;           /* Matches CTA text */
-  border: 2px solid #fff;   /* Clean border */
+  background: #1BA6CC;       /* Brand cyan like primary button */
+  color: #fff;               /* White text */
+  border: 2px solid #1BA6CC; /* Match brand */
 }
 
 .cta-button:hover {
-  background: rgba(255, 255, 255, 0.2); /* Subtle hover effect */
-  color: #fff;
-  transform: scale(1.05);
+  background: transparent;   /* Transparent on hover */
+  color: #1BA6CC;            /* Cyan text on hover */
+  transform: scale(1.05);    /* Keep the scale effect */
 }
 
 #particles {
@@ -1594,7 +1597,7 @@ body {
 /* ===== SECTION 1: BUILDING ONLINE PRESENCE ===== */
 .our-story {
   padding: 80px 20px;
-  background: #1BA6CC;
+  background: #0C0E1F;
   color: #fff;
   text-align: center;
   
@@ -1676,7 +1679,7 @@ body {
 /* ===== SECTION 3: MESSAGE FROM FOUNDER ===== */
 .founder-section {
   padding: 80px 20px;
-  background: #0C0E1F; /* Slightly darker */
+  background: #1ba6cc; /* Slightly darker */
   color: #fff;
 }
 
@@ -1700,7 +1703,7 @@ body {
   height: 250px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #1ba6cc;
+  border: 4px solid #0c0e1f;
 }
 
 .founder-message {
@@ -1710,7 +1713,7 @@ body {
 .founder-message h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #1ba6cc;
+  color: #fff;
   
 }
 
@@ -2996,6 +2999,393 @@ body {
 
 /* ================== Case Study Page CSS End ================== */
 
+
+/* ================== Privacy Policy Page CSS Start ================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0C0E1F; /* main background */
+    color: #ffffff; /* default text colour */
+}
+
+.privacy-policy {
+    width: 100%;
+    background-color: #0C0E1F; /* main section bg */
+    padding: 60px 20px;
+    box-sizing: border-box;
+}
+
+.privacy-policy .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.privacy-policy h1, 
+.privacy-policy h2, 
+.privacy-policy h3 {
+    color: #ffffff;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+  .privacy-policy h1 {
+    font-size: 36px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  /* Cyan underline for main title */
+  .privacy-policy h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #1BA6CC;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+.privacy-policy h2 {
+    font-size: 28px;
+}
+
+.privacy-policy p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+    color: #ffffff;
+}
+
+.privacy-policy ul {
+    margin: 16px 0 16px 30px;
+    padding: 0;
+    list-style-type: disc;
+    color: #ffffff;
+}
+
+.privacy-policy li {
+    margin-bottom: 10px;
+}
+
+.privacy-policy a {
+    color: #1BA6CC; /* CR8 cyan */
+    text-decoration: none;
+}
+
+.privacy-policy a:hover {
+    text-decoration: underline;
+}
+
+.privacy-policy blockquote {
+    background-color: #142434; /* secondary bg from CR8 palette */
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 4px solid #1BA6CC; /* CR8 cyan highlight */
+    font-style: italic;
+    color: #ffffff;
+}
+
+.privacy-policy table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    color: #ffffff;
+}
+
+.privacy-policy table th,
+.privacy-policy table td {
+    border: 1px solid #1BA6CC;
+    padding: 12px;
+    text-align: left;
+}
+
+.privacy-policy table th {
+    background-color: #142434; /* secondary bg */
+    font-weight: 600;
+}
+
+.privacy-policy table tr:nth-child(even) {
+    background-color: #0C0E1F; /* main bg for even rows */
+}
+
+@media (max-width: 768px) {
+    .privacy-policy h1 {
+        font-size: 28px;
+    }
+    .privacy-policy h2 {
+        font-size: 22px;
+    }
+}
+
+
+/* ================== Privacy Policy Page CSS End ================== */
+
+
+
+
+
+/* ================== Terms & Conditions Page CSS Start ================== */
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0C0E1F; /* main background */
+      color: #ffffff;
+    }
+
+    .terms-conditions {
+      width: 100%;
+      background-color: #0C0E1F; /* main section bg */
+      padding: 60px 20px;
+      box-sizing: border-box;
+    }
+
+    .terms-conditions .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .terms-conditions h1,
+    .terms-conditions h2,
+    .terms-conditions h3 {
+      color: #ffffff;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .terms-conditions h1 {
+      font-size: 36px;
+      text-align: center;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    /* Cyan underline for main title */
+    .terms-conditions h1::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 3px;
+      background-color: #1BA6CC;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    .terms-conditions h2 {
+      font-size: 28px;
+    }
+
+    .terms-conditions p {
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 16px;
+      color: #ffffff;
+    }
+
+    /* Brand-coloured bullets */
+    .terms-conditions ul {
+      margin: 16px 0 16px 30px;
+      padding: 0;
+      list-style-type: disc;
+      color: #ffffff;
+    }
+
+    .terms-conditions ul li {
+      margin-bottom: 10px;
+    }
+
+    .terms-conditions ul li::marker {
+      color: #1BA6CC; /* CR8 brand colour */
+    }
+
+    .terms-conditions a {
+      color: #1BA6CC; /* CR8 cyan */
+      text-decoration: none;
+    }
+
+    .terms-conditions a:hover,
+    .terms-conditions a:focus {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .terms-conditions h1 {
+        font-size: 28px;
+      }
+      .terms-conditions h2 {
+        font-size: 22px;
+      }
+    }
+
+   
+/* ================== Terms & Conditions Page CSS End ================== */
+
+
+/* ================== Blog1 Page CSS Start ================== */
+/* ================== General Page Styles ================== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0C0E1F;
+  color: #ffffff;
+  line-height: 1.8;
+}
+
+/* ================== Hero Section ================== */
+.sample-blog-hero {
+  position: relative;
+  width: 100%;
+  height: 560px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.sample-blog-hero img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.sample-blog-hero h1 {
+  font-size: 3rem;
+  margin: 0;
+  padding: 20px;
+  background: rgba(0,0,0,0.4);
+  border-radius: 6px;
+  color: #fff;
+  max-width: 90%;
+  position: relative;
+  z-index: 2;
+}
+
+.sample-blog-hero h1::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 3px;
+  background-color: #1BA6CC;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* ================== Author Section ================== */
+.author-section {
+  display: flex;
+  align-items: center;
+  margin: 30px auto 0 auto;
+  max-width: 1200px;
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.author-section img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #1BA6CC;
+}
+
+.author-section .author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-section .author-info span {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.author-section .author-info a {
+  font-size: 0.9rem;
+  color: #1BA6CC;
+  text-decoration: none;
+}
+
+.author-section .author-info a:hover {
+  text-decoration: underline;
+}
+
+/* ================== Blog Content ================== */
+.sample-blog-content {
+  max-width: 1200px;
+  margin: 30px auto 60px auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 0;
+}
+
+.sample-blog-content h2,
+.sample-blog-content h3 {
+  color: #ffffff;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.sample-blog-content h2 { font-size: 2rem; }
+.sample-blog-content h3 { font-size: 1.5rem; }
+
+.sample-blog-content p {
+  font-size: 1rem;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.sample-blog-content ul {
+  margin: 16px 0 16px 30px;
+  padding: 0;
+  list-style-type: disc;
+  color: #ffffff;
+}
+
+.sample-blog-content ul li {
+  margin-bottom: 10px;
+}
+
+.sample-blog-content ul li::marker {
+  color: #1BA6CC;
+}
+
+.sample-blog-content a {
+  color: #1BA6CC;
+  text-decoration: none;
+}
+
+.sample-blog-content a:hover {
+  text-decoration: underline;
+}
+
+.sample-blog-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+  object-fit: cover;
+}
+
+/* ================== Responsive ================== */
+@media (max-width: 768px) {
+  .sample-blog-hero h1 { font-size: 2rem; padding: 10px; }
+  .sample-blog-content h2 { font-size: 1.5rem; }
+  .sample-blog-content h3 { font-size: 1.2rem; }
+  .sample-blog-content p { font-size: 0.95rem; }
+  .author-section { flex-direction: column; align-items: flex-start; gap: 10px; }
+}
+
+/* ================== Blog1 Page CSS End ================== */
 
 
 
