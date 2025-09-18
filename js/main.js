@@ -182,3 +182,19 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
+
+
+
+// Select Whole Card for Action/Clickable in Home Page - Service Section
+const cards = document.querySelectorAll('.service-card');
+
+cards.forEach(card => {
+  card.addEventListener('click', function(e) {
+    // Prevent the inner link from triggering twice
+    if(e.target.tagName !== 'A') {
+      window.location = card.dataset.link;
+    }
+  });
+});
+
