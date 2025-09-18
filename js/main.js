@@ -197,7 +197,18 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+  // Blog cards
+  const blogCards = document.querySelectorAll('.blog-card');
+  blogCards.forEach(card => {
+    card.addEventListener('click', function(e) {
+      if(e.target.tagName !== 'A') {
+        window.location = card.dataset.link;
+      }
+    });
+  });
+ 
 });
+
 
 
 
