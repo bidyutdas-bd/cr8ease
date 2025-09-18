@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// Select Whole Card for Action/Clickable in Home Page - Service Section
+// Service Card Clickable in Home Page - Service Section
 const cards = document.querySelectorAll('.service-card');
 
 cards.forEach(card => {
@@ -197,4 +197,6 @@ cards.forEach(card => {
     }
   });
 });
+
+
 
