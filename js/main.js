@@ -1,3 +1,29 @@
+// Animate elements on scroll
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll('.animate-rotate-fade');
+
+  function animateOnScroll() {
+    const windowBottom = window.innerHeight;
+
+    elements.forEach(el => {
+      const elementTop = el.getBoundingClientRect().top;
+
+      // If the element is within 100px of the bottom of viewport
+      if (elementTop < windowBottom - 100) {
+        el.classList.add('active');
+      } else {
+        el.classList.remove('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', animateOnScroll);
+  animateOnScroll(); // run once on load
+});
+
+
+
+
 /*
   cr8ease Navbar JS
   Features:
@@ -183,6 +209,36 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+//Search Box JS Code To Featch on Json
+// Fetch JSON data
+const searchInput = document.querySelector(".search-input");
+const searchResults = document.querySelector(".search-results");
+
+// Load JSON file with all pages content
+let pages = [];
+
+fetch("search-data.json") // Place JSON in your root folder or /assets
+  .then(response => response.json())
+  .then(data => pages = data);
+
+searchInput.addEventListener("input", () => {
+  const query = searchInput.value.toLowerCase();
+  searchResults.innerHTML = "";
+
+  if (!query) return;
+
+  const filtered = pages.filter(page =>
+    page.title.toLowerCase().includes(query) ||
+    page.content.toLowerCase().includes(query)
+  );
+
+  filtered.forEach(page => {
+    const link = document.createElement("a");
+    link.href = page.url;
+    link.textContent = page.title;
+    searchResults.appendChild(link);
+  });
+});
 
 
 
@@ -197,6 +253,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
   // Blog cards
   const blogCards = document.querySelectorAll('.blog-card');
   blogCards.forEach(card => {
@@ -206,8 +263,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
- 
 });
+
 
 
 
