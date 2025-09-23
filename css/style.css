@@ -58,7 +58,7 @@ ul { list-style: none; }
 .nav-list { 
   display: flex; gap: 4px; }
 .nav-link {
-  padding: 8px 12px;
+  padding: 8px 8px;
   border-radius: 6px;
   color: var(--link-color);
   transition: var(--transition);
@@ -117,6 +117,46 @@ ul { list-style: none; }
   fill: currentColor; /* inherits color from button */
 }
 .search-button:hover { color: #ffffff; }
+
+
+/* Search Result Start*/
+/* Search results dropdown */
+.search-results {
+  position: absolute;
+  top: 100%; /* just below input */
+  left: 75%;
+  right: 0;
+  background-color: #f5f5f5;
+  
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  max-height: 300px;
+  overflow-y: auto;
+  /* display: none; hidden by default */
+  z-index: 1000;
+}
+
+.search-results a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #142434;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-results a:last-child {
+  border-bottom: none;
+}
+
+.search-results a:hover {
+  background-color: #1ba6cc;
+  color: #fff;
+}
+
+/* Search results End */
+
+
+
 
 /* ----- Mobile Toggle ----- */
 .nav-toggle {
@@ -333,8 +373,8 @@ ul { list-style: none; }
   body.nav-open .nav-toggle .cross { display: inline; }
 
 /* ===== Demo content styling ===== */
-.demo-hero { padding: 100px 16px 40px; text-align: center; background: #0c0e1f; }
-.demo-fill { height: 150vh; }
+/* .demo-hero { padding: 100px 16px 40px; text-align: center; background: #0c0e1f; }
+.demo-fill { height: 150vh; } */
 
   .nav-toggle {
     display: flex;              /* show only on mobile */
@@ -1337,7 +1377,8 @@ body {
 .contact-hero .hero-overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(12,14,31,0.6); /* darker overlay */
+   background-color: rgba(0,0,0,0.5); 
+  /* darker overlay */
   z-index: 2;
 }
 
@@ -1564,7 +1605,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(12, 14, 31, 0.6);
+  /* background-color: rgba(0,0,0,0.5); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1676,14 +1717,14 @@ body {
   object-fit: cover;
 }
 
-/* ===== SECTION 3: MESSAGE FROM FOUNDER ===== */
-.founder-section {
+/* ===== OUR STORY SECTION ===== */
+.our-story {
   padding: 80px 20px;
-  background: #1ba6cc; /* Slightly darker */
-  color: #fff;
+  background: #1ba6cc; /* brand blue background */
+  color: #fff; /* white text */
 }
 
-.founder-container {
+.story-container {
   display: flex;
   gap: 40px;
   max-width: 1200px;
@@ -1692,37 +1733,40 @@ body {
   align-items: center;
 }
 
-.founder-image {
+.story-content {
+  flex: 2 1 500px;
+}
+
+.story-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff; /* heading in white */
+  text-align: center; /* centered heading */
+}
+
+.story-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: left;
+  color: #fff; /* paragraph text in white */
+}
+
+.story-image {
   flex: 1 1 300px;
   display: flex;
   justify-content: center;
 }
 
-.founder-image img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #0c0e1f;
+.story-image img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  /* border: 4px solid #fff; */
+   /* border white to contrast background */
 }
 
-.founder-message {
-  flex: 2 1 500px;
-}
-
-.founder-message h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #fff;
-  
-}
-
-.founder-message p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 15px;
-  text-align: left;
-}
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
@@ -1749,12 +1793,6 @@ body {
 
 
 /* ================== Education Page CSS Start ================== */
-
-
-
-
-
-
 
 
 
@@ -1787,7 +1825,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(12, 14, 31, 0.6);
+  /* background: rgba(12, 14, 31, 0.6); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1980,24 +2018,6 @@ body {
 
 
 
-/* Breadcrumb Section (no extra background) 
-.breadcrumb-container {
-  text-align: center;
-  padding: 15px 0;
-  font-size: 1rem;
-  color: #fff;
-}
-
-.breadcrumb-container a {
-  color: #1ba6cc;
-  text-decoration: none;
-}
-
-.breadcrumb-container span {
-  color: #fff;
-}
-*/
-
 /* Business Banner */
 .business-banner {
   position: relative;
@@ -2025,7 +2045,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(12, 14, 31, 0.6);
+   background-color: rgba(0,0,0,0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2243,23 +2263,6 @@ body {
 
 /* ================== Custom Page CSS Start ================== */
 
-/* Breadcrumb 
-.breadcrumb-container {
-  text-align: center;
-  padding: 15px 0;
-  font-size: 1rem;
-  color: #fff;
-}
-
-.breadcrumb-container a {
-  color: #1ba6cc;
-  text-decoration: none;
-}
-
-.breadcrumb-container span {
-  color: #fff;
-}
-*/
 
 /* Custom Banner */
 .custom-banner {
@@ -2288,7 +2291,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(12, 14, 31, 0.6);
+  /* background: rgba(12, 14, 31, 0.6); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2502,7 +2505,7 @@ body {
 .hero-team .hero-overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0,0,0,0.5); /* Adjust opacity for darker/light effect */
+  /* background-color: rgba(0,0,0,0.5); */
   z-index: 2;
 }
 
@@ -2874,7 +2877,7 @@ body {
 .case-hero .hero-overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0,0,0,0.5); /* Same as blog */
+  /* background-color: rgba(0,0,0,0.5); */
   z-index: 2;
 }
 
@@ -3232,7 +3235,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: #0C0E1F;
+  background: linear-gradient(135deg, #0c0e1f 30%, #22cefe);
   color: #ffffff;
   line-height: 1.8;
 }
@@ -3260,12 +3263,12 @@ body {
 }
 
 .sample-blog-hero h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 0;
   padding: 20px;
   background: rgba(0,0,0,0.4);
   border-radius: 6px;
-  color: #fff;
+  color: #1BA6CC;
   max-width: 90%;
   position: relative;
   z-index: 2;
@@ -3276,7 +3279,7 @@ body {
   display: block;
   width: 120px;
   height: 3px;
-  background-color: #1BA6CC;
+  background-color: #fff;
   margin: 10px auto 0;
   border-radius: 2px;
 }
@@ -3285,18 +3288,18 @@ body {
 .author-section {
   display: flex;
   align-items: center;
-  margin: 30px auto 0 auto;
+  margin: 100px auto 0 auto;
   max-width: 1200px;
   gap: 15px;
   padding: 0 20px;
 }
 
 .author-section img {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #1BA6CC;
+  border: 5px solid #1BA6CC;
 }
 
 .author-section .author-info {
@@ -3324,10 +3327,9 @@ body {
   max-width: 1200px;
   margin: 30px auto 60px auto;
   padding: 0 20px;
-  position: relative;
-  z-index: 0;
 }
 
+/* Headings */
 .sample-blog-content h2,
 .sample-blog-content h3 {
   color: #ffffff;
@@ -3339,12 +3341,14 @@ body {
 .sample-blog-content h2 { font-size: 2rem; }
 .sample-blog-content h3 { font-size: 1.5rem; }
 
+/* Paragraphs */
 .sample-blog-content p {
   font-size: 1rem;
   margin-bottom: 16px;
   color: #ffffff;
 }
 
+/* Lists */
 .sample-blog-content ul {
   margin: 16px 0 16px 30px;
   padding: 0;
@@ -3360,6 +3364,7 @@ body {
   color: #1BA6CC;
 }
 
+/* Links */
 .sample-blog-content a {
   color: #1BA6CC;
   text-decoration: none;
@@ -3369,24 +3374,201 @@ body {
   text-decoration: underline;
 }
 
-.sample-blog-content img {
+/* ================== Right-side Images ================== */
+.blog-image-right {
+  float: right;
   width: 100%;
-  border-radius: 10px;
-  margin: 20px 0;
+  height: 100%;       /* increased from 45% */
+  max-width: 500px; /* slightly bigger */
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
   object-fit: cover;
+}
+
+/* Clear floats if needed */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 /* ================== Responsive ================== */
 @media (max-width: 768px) {
-  .sample-blog-hero h1 { font-size: 2rem; padding: 10px; }
-  .sample-blog-content h2 { font-size: 1.5rem; }
-  .sample-blog-content h3 { font-size: 1.2rem; }
-  .sample-blog-content p { font-size: 0.95rem; }
-  .author-section { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .blog-image-right {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 15px 0;
+  }
 }
 
-/* ================== Blog1 Page CSS End ================== */
+
+/* ================== Animation CSS Start ================== */
+
+.animate-rotate-fade {
+  opacity: 0;
+  transform: translateY(20px) rotate(-10deg);
+  transition: all 0.8s ease-out;
+}
+
+.animate-rotate-fade.active {
+  opacity: 1;
+  transform: translateY(0) rotate(0);
+}
+
+/* ================== Blog1 Page CSS Start ================== */
 
 
 
+
+
+/* ================== Case1 Page CSS Start ================== */
+.case1-page {
+  font-family: 'Montserrat', sans-serif;
+  background: #0C0E1F;
+  color: #ffffff;
+  line-height: 1.8;
+}
+
+/* ===== Hero Section ===== */
+.case1-page .case1-hero {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.case1-page .case1-hero img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.case1-page .case1-hero .hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.case1-page .case1-hero h1 {
+  color: #1BA6CC;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.case1-page .case1-hero p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+/* ===== Key Metrics ===== */
+.case1-page .case1-metrics {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.case1-page .metric-card {
+  flex: 1;
+  text-align: center;
+  background: rgba(27,166,204,0.1);
+  border: 2px solid #1BA6CC;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.case1-page .metric-card:hover {
+  transform: translateY(-5px);
+}
+
+.case1-page .metric-card h2 {
+  font-size: 2rem;
+  color: #1BA6CC;
+  margin-bottom: 10px;
+}
+
+.case1-page .metric-card p {
+  font-size: 1rem;
+  margin: 0;
+  color: #ffffff;
+}
+
+/* ===== Content Cards ===== */
+.case1-page .case1-content {
+  max-width: 1200px;
+  margin: 30px auto 0 auto; /* remove 60px bottom */
+  padding: 0 20px 60px 20px; /* move spacing into padding */
+}
+
+.case1-page .content-card {
+  background: #142434;
+  border-left: 5px solid #1BA6CC;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.case1-page .content-card h2 {
+  color: #1BA6CC;
+  margin-bottom: 15px;
+}
+
+.case1-page .content-card p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.case1-page .card-image {
+  float: right;
+  max-width: 400px;
+  width: 100%;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Clear floats */
+.case1-page .clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .case1-page .card-image {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 15px 0;
+  }
+
+  .case1-page .case1-metrics {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* ================== Case1 Page CSS End ================== */
+
+
+
+/* ================== Auto show animation Start ================== */
+
+/* ================== Auto show animation End ================== */
 
