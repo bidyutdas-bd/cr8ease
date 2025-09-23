@@ -2651,7 +2651,17 @@ body {
   transform: rotateY(180deg);
   text-align: center;
 }
+.flip-card-back .linkedin-icon {
+  margin-top: 10px;
+  font-size: 28px;
+  color: #1BA6CC;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
+.flip-card-back .linkedin-icon:hover {
+  color: #fff;
+}
 .flip-card-back h3 {
   margin-bottom: 10px;
   color: #22CEFE;
@@ -3571,4 +3581,5 @@ body {
 /* ================== Auto show animation Start ================== */
 
 /* ================== Auto show animation End ================== */
+
 
