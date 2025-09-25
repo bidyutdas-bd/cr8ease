@@ -1,14 +1,17 @@
-// Animate elements on scroll
-document.addEventListener("DOMContentLoaded", () => {
-  const elements = document.querySelectorAll('.animate-rotate-fade');
+//   cr8ease JS
+//   Features:
 
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  // =========================
+  // Animate elements on scroll
+  // =========================
+  const elements = document.querySelectorAll('.animate-rotate-fade');
   function animateOnScroll() {
     const windowBottom = window.innerHeight;
-
     elements.forEach(el => {
       const elementTop = el.getBoundingClientRect().top;
-
-      // If the element is within 100px of the bottom of viewport
       if (elementTop < windowBottom - 100) {
         el.classList.add('active');
       } else {
@@ -16,115 +19,109 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-
-  window.addEventListener('scroll', animateOnScroll);
-  animateOnScroll(); // run once on load
-});
-
-
-//Slider Banner Animation Start
-
-const heroSliderTrack = document.querySelector('.hero-slider-track');
-const heroSliderItems = document.querySelectorAll('.hero-slider-item');
-let heroCurrentSlide = 0;
-
-// Clone first slide for smooth infinite loop
-const heroFirstClone = heroSliderItems[0].cloneNode(true);
-heroSliderTrack.appendChild(heroFirstClone);
-
-function nextHeroSlide() {
-  heroCurrentSlide++;
-  heroSliderTrack.style.transition = 'transform 1s ease-in-out';
-  heroSliderTrack.style.transform = `translateX(-${heroCurrentSlide * 100}%)`;
-
-  if (heroCurrentSlide === heroSliderItems.length) {
-    setTimeout(() => {
-      heroSliderTrack.style.transition = 'none';
-      heroSliderTrack.style.transform = 'translateX(0)';
-      heroCurrentSlide = 0;
-    }, 1000);
+  if (elements.length) {
+    window.addEventListener('scroll', animateOnScroll);
+    animateOnScroll();
   }
-}
 
-// Auto-slide every 4 seconds
-setInterval(nextHeroSlide, 4000);
+  // =========================
+  // Hero Slider
+  // =========================
+  const heroSliderTrack = document.querySelector('.hero-slider-track');
+  const heroSliderItems = document.querySelectorAll('.hero-slider-item');
+  if (heroSliderTrack && heroSliderItems.length) {
+    let heroCurrentSlide = 0;
+    const heroFirstClone = heroSliderItems[0].cloneNode(true);
+    heroSliderTrack.appendChild(heroFirstClone);
 
-//Slider Banner Animation Start
+    function nextHeroSlide() {
+      heroCurrentSlide++;
+      heroSliderTrack.style.transition = 'transform 1s ease-in-out';
+      heroSliderTrack.style.transform = `translateX(-${heroCurrentSlide * 100}%)`;
+      if (heroCurrentSlide === heroSliderItems.length) {
+        setTimeout(() => {
+          heroSliderTrack.style.transition = 'none';
+          heroSliderTrack.style.transform = 'translateX(0)';
+          heroCurrentSlide = 0;
+        }, 1000);
+      }
+    }
+    setInterval(nextHeroSlide, 4000);
+  }
 
-
-
-
-/*
-  cr8ease Navbar JS
-  Features:
-    - Mobile menu toggle
-    - Cross button to close
-    - ESC key closes menu
-*/
-
-document.addEventListener('DOMContentLoaded', () => {
+  // =========================
+  // Navbar
+  // =========================
   const toggle = document.querySelector('.nav-toggle');
   const body = document.body;
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      const isOpen = body.classList.contains('nav-open');
+      body.classList.toggle('nav-open', !isOpen);
+      toggle.setAttribute('aria-expanded', !isOpen);
+      toggle.setAttribute('aria-label', !isOpen ? 'Close menu' : 'Open menu');
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') body.classList.remove('nav-open');
+    });
+  }
 
-  toggle.addEventListener('click', () => {
-    const isOpen = body.classList.contains('nav-open');
-    body.classList.toggle('nav-open', !isOpen);
-    toggle.setAttribute('aria-expanded', !isOpen);
-    toggle.setAttribute('aria-label', !isOpen ? 'Close menu' : 'Open menu');
-  });
+  // =========================
+  // Partner Section Swiper
+  // =========================
+  if (typeof Swiper !== 'undefined' && document.querySelector('.partners-swiper')) {
+    const swiper = new Swiper('.partners-swiper', {
+      loop: true,
+      speed: 5000,
+      slidesPerView: 5,
+      spaceBetween: 30,
+      freeMode: true,
+      freeModeMomentum: false,
+      autoplay: { delay: 0, disableOnInteraction: false },
+      breakpoints: {
+        320: { slidesPerView: 1 },
+        480: { slidesPerView: 2 },
+        768: { slidesPerView: 3 },
+        1024: { slidesPerView: 4 },
+        1280: { slidesPerView: 5 },
+      },
+    });
+  }
 
-  // ESC key closes menu
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') body.classList.remove('nav-open');
-  });
-});
-/*
-  cr8ease Navbar JS End
-*/
+  // =========================
+  // Testimonial Slider
+  // =========================
+  const slides = document.querySelectorAll('.testimonial-slide');
+  const dotsContainer = document.querySelector('.dots');
+  if (slides.length && dotsContainer) {
+    let currentIndex = 0;
+    const dots = [];
+    slides.forEach((_, i) => {
+      const dot = document.createElement('span');
+      dot.classList.add('dot');
+      if (i === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => {
+        currentIndex = i;
+        showSlide(currentIndex);
+      });
+      dotsContainer.appendChild(dot);
+      dots.push(dot);
+    });
+    function showSlide(index) {
+      slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+      dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+    }
+    showSlide(currentIndex);
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }, 5000);
+  }
 
 
-
-
-
-/*
- Partner JS
- for sliding partner section
-*/
-document.addEventListener('DOMContentLoaded', () => {
-  const swiper = new Swiper('.partners-swiper', {
-    loop: true,                     // infinite loop
-    speed: 5000,                     // smooth glide speed (adjust as needed)
-    slidesPerView: 5,                // visible logos
-    spaceBetween: 30,
-    freeMode: true,                  // enables continuous glide
-    freeModeMomentum: false,         // prevents stop at end
-    autoplay: {
-      delay: 0,                      // continuous sliding
-      disableOnInteraction: false,
-    },
-    breakpoints: {
-      320: { slidesPerView: 1 },
-      480: { slidesPerView: 2 },
-      768: { slidesPerView: 3 },
-      1024: { slidesPerView: 4 },
-      1280: { slidesPerView: 5 },
-    },
-  });
-});
-
-/*
- Partner JS End
-*/
-
-
-
-
-
-/*
-CTA JS
-Call to Action Section
-*/
-
+  // =========================
+  // CTA Particles
+  // =========================
 const canvas = document.getElementById('particles');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
@@ -171,129 +168,28 @@ window.addEventListener('resize', ()=>{
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 });
-/* CTA Particles JS End */
 
 
 
 
-
-/*
-Testimoni Section JS Start 
-*/
-const slides = document.querySelectorAll('.testimonial-slide');
-const dotsContainer = document.querySelector('.dots');
-let currentIndex = 0;
-
-// Generate dots automatically
-slides.forEach((_, i) => {
-  const dot = document.createElement('span');
-  dot.classList.add('dot');
-  if (i === 0) dot.classList.add('active');
-  dot.addEventListener('click', () => {
-    currentIndex = i;
-    showSlide(currentIndex);
-  });
-  dotsContainer.appendChild(dot);
-});
-
-const dots = document.querySelectorAll('.dot');
-
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.toggle('active', i === index);
-    dots[i].classList.toggle('active', i === index);
-  });
-}
-
-// Auto slide every 5 seconds
-setInterval(() => {
-  currentIndex = (currentIndex + 1) % slides.length;
-  showSlide(currentIndex);
-}, 5000);
-
-/*
-Testimoni Section JS End
-*/
-
-
-
-
-/* ===== About Page Animations ===== */
-/* ===== About Page Animations ===== */
-
-
-
-
-/* ===== Meet The Team Page Animations ===== */
-
-// Simple fade-in animation on scroll
-// Enable flip on mobile/touch devices
-document.addEventListener("DOMContentLoaded", () => {
+  // =========================
+  // Meet The Team Flip
+  // =========================
   const members = document.querySelectorAll(".team-member");
-
-  members.forEach(member => {
-    member.addEventListener("click", () => {
-      member.classList.toggle("flip");
+  if (members.length) {
+    members.forEach(member => {
+      member.addEventListener("click", () => member.classList.toggle("flip"));
     });
-  });
-});
+  }
 
 
-//Search Box JS Code To Featch on Json
-// Fetch JSON data
-const searchInput = document.querySelector(".search-input");
-const searchResults = document.querySelector(".search-results");
 
-// Load JSON file with all pages content
-let pages = [];
 
-fetch("search-data.json") // Place JSON in your root folder or /assets
-  .then(response => response.json())
-  .then(data => pages = data);
-
-searchInput.addEventListener("input", () => {
-  const query = searchInput.value.toLowerCase();
-  searchResults.innerHTML = "";
-
-  if (!query) return;
-
-  const filtered = pages.filter(page =>
-    page.title.toLowerCase().includes(query) ||
-    page.content.toLowerCase().includes(query)
-  );
-
-  filtered.forEach(page => {
-    const link = document.createElement("a");
-    link.href = page.url;
-    link.textContent = page.title;
-    searchResults.appendChild(link);
-  });
 });
 
 
 
-// Service Card Clickable in Home Page - Service Section
-document.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll('.service-card');
 
-  cards.forEach(card => {
-    card.addEventListener('click', function(e) {
-      if(e.target.tagName !== 'A') {
-        window.location = card.dataset.link;
-      }
-    });
-  });
-
-  // Blog cards
-  const blogCards = document.querySelectorAll('.blog-card');
-  blogCards.forEach(card => {
-    card.addEventListener('click', function(e) {
-      if(e.target.tagName !== 'A') {
-        window.location = card.dataset.link;
-      }
-    });
-  });
-});
 
 
 
