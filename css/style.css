@@ -549,6 +549,7 @@ ul { list-style: none; }
 }
 
 .btn-primary {
+  border: 2px solid #1ba6cc;  
   background: #1ba6cc;
   color: #fff;
 }
@@ -560,6 +561,7 @@ ul { list-style: none; }
 }
 
 .btn-secondary {
+  border: 2px solid #1ba6cc;  
   background: #1ba6cc;
   color: #fff;
 }
@@ -3682,6 +3684,7 @@ body {
 /* ===== Slider Button ===== */
 .hero-slider-btn {
   background: #1ba6cc;
+  border: 2px solid #1ba6cc;
   color: #fff;
   padding: 12px 24px;
   border-radius: 6px;
@@ -3725,3 +3728,4 @@ body {
 
 
 /* ==================Slider Banner End ================== */
+
