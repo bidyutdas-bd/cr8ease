@@ -1,0 +1,392 @@
+
+  [
+  {
+    "page": "index.html",
+    "id": "home",
+    "title": "Home",
+    "headings": [
+      {"type": "h1", "text": "BUILD BRAND AWARENESS"},
+      {"type": "h2", "text": "Our Services"},
+      {"type": "h2", "text": "Blogs and Case Studies"},
+      {"type": "h2", "text": "Ready to Elevate Your Brand?"}
+    ],
+    "mainContent": [
+      "Communicate With Your Target Audience & Build Your Brand.",
+      "We provide a wide range of professional services to help your business grow and stay ahead in technology.",
+      "Our social media experience helps your School establish itself online with a cohesive image across all platforms.",
+      "You’ve set up your business, but you need the skills and expertise to get your online presence going.",
+      "If your business needs a bespoke marketing approach, this custom package will be perfect for you.",
+      "Stay updated with our latest insights, news, and updates for your business.",
+      "Innovative solutions tailored for your business.",
+      "We believe in forming relationships in a positive, simple and effective manner and that is how we like to manage our customer’s requirements."
+    ],
+    "CTAs": ["Learn More", "Get Started"],
+    "contactInfo": ["Suite 101, Earl Business Centre, Dowry Street, Oldham, OL8 2PF.", "T: 0161 284 1085", "E: info@cr8ease.com"],
+    "tags": ["brand awareness", "IT services", "marketing", "digital solutions", "social media"],
+      "testimonials": [
+    "Mohammed Hadi (CEO, Voktis): Cr8 Ease helped transform our digital presence with an innovative and professional approach.",
+    "Shah Amanat (Operations Manager, Voktis Bangladesh): Professional, reliable, and creative. Highly recommend for any business looking to scale.",
+    "Rafatul Kabir (Project Manager, Voktis Bangladesh): The team’s support and expertise were invaluable. Our project exceeded all expectations."
+  ]
+  },
+ 
+  {
+    "page": "about.html",
+    "id": "about",
+    "title": "About Us",
+    "headings": [
+      {"type": "h1", "text": "About Us"},
+      {"type": "h2", "text": "Building Online Presence"},
+      {"type": "h2", "text": "We Believe in Opportunity"},
+      {"type": "h2", "text": "Our Story"},
+      {"type": "h2", "text": "Ready to Elevate Your Brand?"}
+    ],
+    "mainContent": [
+      "We believe in forming relationships in a positive, simple and effective manner and that is how we like to manage our customers Social Media requirements.",
+      "With strong ambitions to be a market leader and supporting significant growth in our customers prepares us well to be the Social Media company in your journey.",
+      "Cr8 Ease is a family run business with a diverse team offering opportunities for people who enjoy their role whilst supporting their career progress.",
+      "We believe creating a happy work environment not only means a happy workforce, but also happy customers.",
+      "Our company is built up of a management team with strong industry experience, giving young people opportunities to work in their dream roles, developing them into well-rounded individuals and empowering people to become top performers in their roles.",
+      "Cr8 Ease was founded with a simple belief: creativity should be accessible, simple, and powerful for every business.",
+      "We noticed a growing need for digital solutions that combine both design and technology without unnecessary complexity.",
+      "From the beginning, our mission has been to help brands build their online presence with ease.",
+      "Whether through design, development, or strategy, we focus on creating solutions that bring real value to businesses of all sizes.",
+      "Today, Cr8 Ease continues to grow with the same passion — making digital creativity easier and more impactful while staying true to our vision of innovation and simplicity.",
+      "Innovative solutions tailored for your business.",
+      "We believe in forming relationships in a positive, simple and effective manner and that is how we like to manage our customer’s requirements.",
+      "Diversity and inclusion: We believe everyone in the world has the ability to make change, regardless of their background.",
+      "Company Culture: Our company culture is one built on different ideas and philosophies merged for a common goal, to make this a great place to work and a great company to work with.",
+      "If our staff are happy, our customers and partners will be happy.",
+      "Our staff are central to the success of our company."
+    ],
+    "CTAs": ["Start Today", "Get Started"],
+    "contactInfo": ["Suite 101, Earl Business Centre, Dowry Street, Oldham, OL8 2PF.", "T: 0161 284 1085", "E: info@cr8ease.com"],
+    "tags": ["about us", "company culture", "digital solutions", "social media", "team"]
+  },
+{
+    "page": "blog.html",
+    "id": "blogs",
+    "title": "Blogs",
+    "headings": [
+      {"type": "h1", "text": "Our Blogs"},
+      {"type": "h2", "text": "Latest Blogs"},
+      {"type": "h2", "text": "Why Cr8 Ease?"}
+    ],
+    "mainContent": [
+      "Explore how artificial intelligence is transforming businesses and everyday life.",
+      "Learn about the most critical cyber threats and how to protect your organisation.",
+      "Discover why cloud computing is essential for small and medium businesses.",
+      "Understand the importance of IT audits to strengthen your business.",
+      "A comprehensive guide for businesses planning to upgrade from Windows 10.",
+      "Tips and tricks to get the most out of Microsoft 365 in your organisation.",
+      "We believe in forming relationships in a positive, simple and effective manner and that is how we like to manage our customer’s requirements."
+    ],
+    "CTAs": ["Read Blogs", "Read More"],
+    "contactInfo": ["Suite 101, Earl Business Centre, Dowry Street, Oldham, OL8 2PF.", "T: 0161 284 1085", "E: info@cr8ease.com"],
+    "tags": ["blogs", "AI", "cybersecurity", "cloud computing", "IT audits", "Windows 10", "Microsoft 365"]
+  },
+  {
+    "page": "sample-blog.html",
+    "id": "sample-blog",
+    "title": "Watch Out For Cr8 Ease: Upcoming Expert Social Media Services To Boost Your Online Presence",
+    "headings": [
+      {"type": "h1", "text": "Watch Out For Cr8 Ease"},
+      {"type": "h2", "text": "Introduction"},
+      {"type": "h2", "text": "Customised Solutions for Educational Institutions"},
+      {"type": "h2", "text": "Customised Solutions for Every Business"},
+      {"type": "h2", "text": "Customised According to Your Needs"},
+      {"type": "h2", "text": "Conclusion"}
+    ],
+    "mainContent": [
+      "In today’s competitive business environment, choosing the right IT partner is critical.",
+      "Sample Blog explores the key elements of successful IT solutions for businesses.",
+      "Every business has unique needs. Sample Blog showcases how bespoke IT solutions maximise efficiency and optimise resources.",
+      "We leverage the latest tools and platforms, including cloud solutions, cybersecurity software, and automation systems, keeping businesses competitive and secure.",
+      "Choosing Sample Blog demonstrates a commitment to growth, innovation, and secure IT solutions for businesses in a digital-first world.",
+      "Operations Director, Cr8 Ease. Reading Time: 5 minutes.",
+      "We believe in forming relationships in a positive, simple and effective manner and that is how we like to manage our customer’s requirements."
+    ],
+    "CTAs": [],
+    "contactInfo": ["Suite 101, Earl Business Centre, Dowry Street, Oldham, OL8 2PF.", "T: 0161 284 1085", "E: info@cr8ease.com"],
+    "tags": ["social media", "IT solutions", "business growth", "cloud computing", "cybersecurity", "digital strategy"]
+  },
+  {
+    "page": "business.html",
+    "id": "social-media-business",
+    "title": "Social Media for Business",
+    "headings": [
+      {"type": "h1", "text": "Social Media for Business"},
+      {"type": "h2", "text": "Why choose our social media management?"},
+      {"type": "h2", "text": "Popular Packages"},
+      {"type": "h2", "text": "Benefits of Social Media Management for Businesses"},
+      {"type": "h2", "text": "Blogs and Case Studies"}
+    ],
+    "mainContent": [
+      "Cr8 Ease is a little different than other management consulting and marketing consulting firms because we have implemented a mix of old-school and highly technical strategies throughout every consulting project to achieve results for our own business.",
+      "With this experience, including re-branding our business entirely, creating a new website, and branding our office space, we have introduced Marketing services to support other businesses in their journey.",
+      "With our Marketing experience, we can help your business establish itself online, with a cohesive image across all platforms and content that specifically appeals to your target audience.",
+      "This effectively promotes your business's services, builds traction, traffic, and awareness.",
+      "We can provide Social Media Branding upon request, assisting your business in creating all materials needed for a successful social media profile, including profile images, header images, highlight covers, and profile information.",
+      "Social media management can be extremely beneficial for businesses, as it allows them to connect with their audience, increase brand awareness, and drive website traffic.",
+      "It also provides a platform for businesses to engage with customers, receive feedback, and build relationships.",
+      "Additionally, social media management can help businesses improve their online reputation, reach a much wider audience, and stay competitive in their industry.",
+      "We believe in forming relationships in a positive, simple and effective manner and that is how we like to manage our customer’s requirements.",
+      "Packages:\nSTARTER: 2 posts per week, 1 story per week, Management of 2 platforms, Unique Content Creation, Strategies tailored to your goals, Hashtag strategy.\nADVANCED: All in Starter included, 5 posts per week, 2 stories per week, Management of 3 platforms, Monthly analytical reports, Monitoring comments/DMs, Dedicated Account Manager."
+    ],
+    "CTAs": ["Get Started"],
+    "contactInfo": ["Suite 101, Earl Business Centre, Dowry Street, Oldham, OL8 2PF.", "T: 0161 284 1085", "E: info@cr8ease.com"],
+    "tags": ["social media", "business", "branding", "marketing", "packages"]
+  },
+    {
+    "page": "case1.html",
+    "id": "sample-case-study",
+    "title": "Sample Case Study | Cr8 Ease - Present smarter. Serve better",
+    "headings": [
+      {"type": "h1", "text": "Challenges"},
+      {"type": "h2", "text": "Approach"},
+      {"type": "h2", "text": "Results"},
+      {"type": "h2", "text": "Conclusion"}
+    ],
+    "mainContent": [
+      "Voktis Group faced several key challenges on their social media platforms, including inconsistent posts and lack of cohesive strategy.",
+      "Cr8 Ease conducted a thorough audit to pinpoint gaps and prioritised critical areas that needed immediate attention.",
+      "A comprehensive strategy was implemented including detailed content calendar, creative campaigns, and analytics monitoring.",
+      "Results within three months: Social media engagement increased by 50%, followers grew by 35%, exceeding KPIs.",
+      "The brand achieved greater consistency, improved recognition, and stronger connection with its community.",
+      "We believe in forming relationships in a positive, simple and effective manner and that is how we like to manage our customer’s requirements."
+    ],
+    "contactInfo": ["Suite 101, Earl Business Centre, Dowry Street, Oldham, OL8 2PF.", "T: 0161 284 1085", "E: info@cr8ease.com"],
+    "tags": ["case study", "social media", "Voktis", "marketing strategy", "results"]
+  },
+  {
+    "page": "casestudy.html",
+    "id": "all-case-studies",
+    "title": "Case Studies",
+    "headings": [
+      {"type": "h1", "text": "OUR CASE STUDIES"},
+      {"type": "h2", "text": "Featured Case Studies"},
+      {"type": "h2", "text": "Case Study Title 1"},
+      {"type": "h2", "text": "Case Study Title 2"},
+      {"type": "h2", "text": "Case Study Title 3"},
+      {"type": "h2", "text": "Case Study Title 4"},
+      {"type": "h2", "text": "Case Study Title 5"},
+      {"type": "h2", "text": "Case Study Title 6"}
+    ],
+    "mainContent": [
+      "Short summary of each case study with hover to read more details.",
+      "We believe in forming relationships in a positive, simple and effective manner and that is how we like to manage our customer’s requirements."
+    ],
+    "contactInfo": ["Suite 101, Earl Business Centre, Dowry Street, Oldham, OL8 2PF.", "T: 0161 284 1085", "E: info@cr8ease.com"],
+    "tags": ["case studies", "projects", "success stories", "social media"]
+  },
+  {
+    "page": "contact.html",
+    "id": "contact",
+    "title": "Contact Us",
+    "headings": [
+      {"type": "h1", "text": "CONTACT US"},
+      {"type": "h2", "text": "Address"},
+      {"type": "h2", "text": "Phone"},
+      {"type": "h2", "text": "E-mail"},
+      {"type": "h2", "text": "Send Us a Message"}
+    ],
+    "mainContent": [
+      "Our team is ready to answer any questions you may have.",
+      "Please contact us using the details below or send us a message using this form.",
+      "Our team will get right back to you.",
+      "We believe in forming relationships in a positive, simple and effective manner and that is how we like to manage our customer’s requirements."
+    ],
+    "contactInfo": ["Suite 101, Earl Business Centre, Dowry Street, Oldham, OL8 2PF.", "0161 284 1085", "info@cr8ease.com"],
+    "tags": ["contact", "support", "address", "phone", "email"]
+  },
+  {
+    "page": "education.html",
+    "id": "social-media-education",
+    "title": "Social Media for Education",
+    "headings": [
+      {"type": "h1", "text": "Social media for Education"},
+      {"type": "h2", "text": "Why Social Media for Education?"},
+      {"type": "h2", "text": "Social Media Packages"},
+      {"type": "h2", "text": "BASIC"},
+      {"type": "h2", "text": "STANDARD"},
+      {"type": "h2", "text": "ADVANCED"},
+      {"type": "h2", "text": "Benefits of Social Media Management for Schools"},
+      {"type": "h2", "text": "Blogs and Case Studies"},
+      {"type": "h2", "text": "Cr8 Ease Launch"},
+      {"type": "h2", "text": "Read Blog"},
+      {"type": "h2", "text": "Why Cr8 Ease?"},
+      {"type": "h2", "text": "Where it all started"}
+    ],
+    "mainContent": [
+      "The importance of social media presence cannot be underestimated in the modern world.",
+      "With millions of social media users, it is a platform accessible to most.",
+      "Whether it is future students, parents, or existing ones requiring updated information, it is important to have an online presence.",
+      "With our experience, we can help your school establish itself online, with a cohesive image across all platforms, and content that specifically appeals to your target audience and effectively promotes your School.",
+      "With social media branding, we can assist your School in creating all the materials needed for a successful social media profile, including profile images, header images, highlight covers, and profile information.",
+      "Social media management can be extremely beneficial for Schools, as it allows them to connect with their audience, increase brand awareness, and drive website traffic.",
+      "It also provides a platform for students, parents, suppliers and more to engage with the School, receive feedback, and build relationships.",
+      "Additionally, social media management can help Schools improve their online reputation, reach a much wider audience and stay competitive in their industry.",
+      "Stay updated with our latest insights, news, and updates for your business.",
+      "Cr8 Ease has launched…. Why Cr8 Ease?. Where it all started….",
+      "We believe in forming relationships in a positive, simple and effective manner and that is how we like to manage our customer’s requirements."
+    ],
+    "tags": ["education", "social media", "school branding", "online presence", "social media packages"]
+  },
+  {
+    "page": "privacy.html",
+    "id": "privacy-policy",
+    "title": "Privacy Policy",
+    "headings": [
+      {"type": "h1", "text": "Privacy Policy"},
+      {"type": "h2", "text": "Privacy Notice"},
+      {"type": "h2", "text": "Purpose of this Privacy Notice"},
+      {"type": "h2", "text": "Contact Details"},
+      {"type": "h2", "text": "Changes to the Privacy Notice"},
+      {"type": "h2", "text": "Data We Collect"},
+      {"type": "h2", "text": "If You Are Unable to Provide Personal Data"},
+      {"type": "h2", "text": "Data Collection Methods"},
+      {"type": "h2", "text": "How We Use Your Personal Data"},
+      {"type": "h2", "text": "Marketing & Cookies"},
+      {"type": "h2", "text": "Change of Purpose & International Transfers"},
+      {"type": "h2", "text": "Data Security & Retention"},
+      {"type": "h2", "text": "Your Legal Rights"}
+    ],
+    "mainContent": [
+      "As part of the EU’s GDPR, 'Personal Data' refers to any information relating to an identifiable individual.",
+      "Voktis Creative is committed to protecting your Personal Data and respecting your privacy.",
+      "This notice explains how we collect, process, and safeguard your data.",
+      "Personal Data must be used lawfully, fairly, transparently, collected for specific purposes, accurate, kept only as long as necessary, and secured.",
+      "Contact: Mohammed Hadi – Data Privacy Manager (DPM), Email: info@cr8ease.com, Suite 101, Earl Business Centre, Dowry Street, Oldham, OL8 2PF, Tel: 0161 284 1085.",
+      "We also collect aggregated data for statistical purposes.",
+      "We collect data via direct interactions, website forms, emails, calls, cookies, analytics, and third-party providers like Google.",
+      "Data is used for contract performance, legitimate interests, legal compliance, protecting interests, and marketing (with consent).",
+      "Marketing communications are sent only with consent. Cookies help analytics, social media, forms, newsletters, and website experience.",
+      "Data transfers outside EEA follow legal safeguards. Personal Data is secured, access limited, and retention is for as long as necessary.",
+      "For questions or exercising rights, contact info@cr8ease.com or visit ico.org.uk.",
+      "We believe in forming relationships in a positive, simple and effective manner."
+    ],
+    "tags": ["privacy", "GDPR", "personal data", "cookies", "data protection"]
+  },
+    {
+    "page": "team.html",
+    "id": "our-team",
+    "title": "Our Team",
+    "headings": [
+      {"type": "h1", "text": "Meet Our Amazing Team"},
+      {"type": "h2", "text": "Our Values"},
+      {"type": "h3", "text": "Innovation"},
+      {"type": "h3", "text": "Collaboration"},
+      {"type": "h3", "text": "Integrity"},
+      {"type": "h3", "text": "Customer Focus"}
+    ],
+    "mainContent": [
+      "Passionate professionals driving our success, leading with vision and dedication.",
+      "Team Members: Mohammed Hadi, Nozom Uddin, Shah Amanat, Shakirul Chowdhury, Rafatul Kabir, Abdur Rahman, Sadikur Rahman, Faysal Ahmad, Saytam Shome, Abu Taher, Shahedul Islam, Masum Ahmed, Muhammad Hamim, Salman Miah, Ayen Uddin, Bidyut Das.",
+      "Roles include innovation, client strategy, operations, web development, design, marketing, and community engagement.",
+      "We believe in forming relationships in a positive, simple and effective manner.",
+      "LinkedIn Profiles available for all team members."
+    ],
+    "tags": ["team", "staff", "values", "roles", "LinkedIn"]
+  },
+  {
+    "page": "terms.html",
+    "id": "terms-conditions",
+    "title": "Terms & Conditions",
+    "headings": [
+      {"type": "h1", "text": "Terms & Conditions"},
+      {"type": "h2", "text": "Agreement Between User and CR8 Website"},
+      {"type": "h2", "text": "Modification of Terms"},
+      {"type": "h2", "text": "Links to Third Party Sites"},
+      {"type": "h2", "text": "No Unlawful Use"},
+      {"type": "h2", "text": "Materials Provided to CR8"},
+      {"type": "h2", "text": "Liability Disclaimer"},
+      {"type": "h2", "text": "Service Contact"},
+      {"type": "h2", "text": "Termination / Access Restriction"},
+      {"type": "h2", "text": "Copyright and Trademark Notices"},
+      {"type": "h2", "text": "Trademarks"},
+      {"type": "h2", "text": "Notices and Procedure for Copyright Claims"}
+    ],
+    "mainContent": [
+      "The CR8 Website is offered under terms and conditions that must be accepted by users.",
+      "CR8 may change terms, conditions, and notices at any time.",
+      "Links to other websites are provided for convenience and do not imply endorsement.",
+      "By submitting content, you grant CR8 permission to use it without compensation.",
+      "CR8 provides all content 'as is' without warranties; liability is limited.",
+      "All content is property of CR8 or its suppliers; trademarks belong to respective owners.",
+      "Copyright infringement notifications should be sent to info@cr8ease.com.",
+      "Users must not defame, abuse, upload viruses, conduct unlawful activities, or restrict other users' access.",
+      "We believe in forming relationships in a positive, simple and effective manner."
+    ],
+    "tags": ["terms", "conditions", "legal", "copyright", "trademarks"]
+  },
+  {
+  "page": "case1.html",
+  "id": "case1",
+  "title": "Sample Case Study | Cr8 Ease",
+  "headings": [
+    {"type": "h2", "text": "Challenges"},
+    {"type": "h2", "text": "Approach"},
+    {"type": "h2", "text": "Results"},
+    {"type": "h2", "text": "Conclusion"},
+    {"type": "h2", "text": "50%"},
+    {"type": "h2", "text": "35%"},
+    {"type": "h2", "text": "10+"}
+  ],
+  "mainContent": [
+    "Voktis Group faced several key challenges on their social media platforms. Posts were inconsistent, leading to low audience engagement, while campaigns lacked a cohesive strategy that could tie content together for maximum impact. The brand struggled to maintain a steady presence, resulting in minimal follower growth and limited interactions. Cr8 Ease conducted a thorough audit to pinpoint these gaps and prioritised the most critical areas that needed immediate attention. By understanding the audience and analysing past performance, we were able to map out clear objectives for a revitalised social media approach.",
+    
+    "To overcome these challenges, Cr8 Ease implemented a comprehensive strategy tailored to Voktis Group’s goals. We developed a detailed content calendar with carefully scheduled posts, aligning topics with audience interests and trending themes in the industry. Creative campaigns were designed to increase engagement and brand visibility, incorporating visually appealing graphics, short videos, and interactive posts. Additionally, we set up analytics monitoring to track performance in real-time, allowing quick adjustments and optimisation. This data-driven approach ensured that every post contributed to measurable improvements in engagement, reach, and follower growth.",
+    
+    "The campaign delivered remarkable results within three months. Social media engagement increased by 50%, while followers grew by 35%, significantly expanding Voktis Group’s online audience. Each campaign exceeded KPIs, with posts receiving higher-than-expected likes, shares, and comments. Audience feedback became more positive, reflecting stronger brand perception. Beyond numbers, the brand achieved greater consistency in messaging, improved recognition in its niche, and a renewed sense of connection with its community. Cr8 Ease’s strategic execution clearly demonstrated that targeted planning and creative implementation can yield tangible, measurable outcomes.",
+    
+    "This case study highlights the power of a strategic, analytics-driven social media campaign. Cr8 Ease showcased that combining creativity, consistency, and data insights leads to measurable success. Voktis Group now enjoys a strong and engaging online presence, with campaigns that consistently resonate with their audience. The collaboration proved that structured planning, innovative content creation, and continuous monitoring are key to achieving social media objectives and sustaining long-term growth."
+  ],
+  "CTAs": [],
+  "contactInfo": [
+    "Suite 101, Earl Business Centre, Dowry Street, Oldham, OL8 2PF.",
+    "T: 0161 284 1085",
+    "E: info@cr8ease.com"
+  ],
+  "tags": ["case study", "social media", "marketing strategy", "Voktis Group", "brand engagement"]
+},
+{
+  "page": "blog1.html",
+  "id": "blog1",
+  "title": "Sample Blog | Cr8 Ease",
+  "author": {
+    "name": "Nozom Uddin",
+    "role": "Operations Director, Cr8 Ease"
+  },
+  "headings": [
+    {"type": "h1", "text": "Watch Out For Cr8 Ease: Upcoming Expert Social Media Services To Boost Your Online Presence"},
+    {"type": "h2", "text": "Introduction"},
+    {"type": "h2", "text": "Customised Solutions for Educational Institutions"},
+    {"type": "h2", "text": "Customised Solutions for Every Business"},
+    {"type": "h2", "text": "Customised According to Your Needs"},
+    {"type": "h2", "text": "Conclusion"}
+  ],
+  "mainContent": [
+    "In today’s competitive business environment, choosing the right IT partner is critical. Sample Blog explores the key elements of successful IT solutions for businesses.",
+    "Every business has unique needs. Sample Blog showcases how bespoke IT solutions maximise efficiency and optimise resources. In today’s competitive business environment, choosing the right IT partner is critical. Sample Blog explores the key elements of successful IT solutions for businesses.",
+    "Every business has unique needs. Sample Blog showcases how bespoke IT solutions maximise efficiency and optimise resources. In today’s competitive business environment, choosing the right IT partner is critical. Sample Blog explores the key elements of successful IT solutions for businesses.",
+    "We leverage the latest tools and platforms, including cloud solutions, cybersecurity software, and automation systems, keeping businesses competitive and secure. In today’s competitive business environment, choosing the right IT partner is critical. Sample Blog explores the key elements of successful IT solutions for businesses.",
+    "Choosing Sample Blog demonstrates a commitment to growth, innovation, and secure IT solutions for businesses in a digital-first world."
+  ],
+  "CTAs": [],
+  "contactInfo": [
+    "Suite 101, Earl Business Centre, Dowry Street, Oldham, OL8 2PF.",
+    "T: 0161 284 1085",
+    "E: info@cr8ease.com"
+  ],
+  "tags": ["blog", "IT solutions", "social media", "digital services", "business technology"]
+}
+
+
+]
+
+
+
+
+  
+  
+

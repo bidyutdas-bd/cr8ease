@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Page Title -->
+  <title>Our Team | Cr8 Ease - Present smarter. Serve better</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/fav-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <!-- Footer social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Swiper JS -->
+</head>
+<body>
+
+<!-- ===== Menubar Start ===== -->
+<header class="site-header">
+  <div class="nav-container">
+    <!-- Logo -->
+    <a href="index.html" class="logo" aria-label="cr8ease home">
+      <img src="images/cr8ease-main-logo.png" alt="Cr8ease Logo" />     
+    </a>
+
+    <!-- Navigation menu -->
+    <nav class="nav" id="primary-nav" aria-label="Primary Navigation">
+      <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="education.html" class="nav-link">Education</a></li>
+          <li><a href="business.html" class="nav-link">Business</a></li>
+          <li><a href="custom.html" class="nav-link">Custom</a></li>
+
+          <!-- About with Submenu -->
+          <li class="menu-item has-submenu">
+          <a href="about.html" class="nav-link">About ⯆</a>
+            
+            <ul class="submenu">
+              <li><a href="team.html" class="nav-link active">Meet The Team</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="casestudy.html">Case Studies</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Search box -->
+    <div class="search-wrapper" role="search" style="position: relative;"> 
+      <div class="search-container">
+        <input type="text" class="search-input" id="site-search" placeholder="Search..." aria-label="Search">
+        <button class="search-button" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8" fill="none"></circle>
+            <line x1="30" y1="30" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </div>
+      <!-- Search results -->
+      <div class="search-results" id="search-results"></div>
+    </div>
+
+    <!-- Mobile toggle button -->
+    <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
+      <div class="burger"></div>
+      <div class="burger"></div>
+      <div class="burger"></div>
+      <span class="cross">&times;</span>
+    </button>
+  </div>
+</header>
+<!-- ===== Menubar End ===== -->
+
+
+<!-- =========================
+  Team sliding  hero Section 
+========================= -->
+<section class="hero-slider-section">
+  <div class="hero-slider-track">
+    <div class="hero-slider-item">
+      <img src="images/slider-1.jpg" alt="Team working together">
+    </div>
+    <div class="hero-slider-item">
+      <img src="images/slider-2.png" alt="Office discussion">
+    </div>
+    <div class="hero-slider-item">
+      <img src="images/slider-3.jpg" alt="Meeting presentation">
+    </div>
+  </div>
+
+  <div class="hero-slider-content">
+    <h1>Meet Our Amazing Team</h1>
+    <div class="hero-slider-btn-wrap">
+      <a href="#team" class="hero-slider-btn">See Members</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+  Team sliding  hero Section 
+========================= --> 
+
+
+
+<!-- ===== Meet the Team Section ===== -->
+<section class="team-section" id="team">
+  <div class="container">
+    <h1 class="section-title">Meet Our Team</h1>
+    <p class="section-subtitle">Passionate professionals driving our success</p>
+    <div class="team-grid">
+
+      <!-- Member 1 -->
+      <div class="team-member">
+        <div class="flip-card">
+          <div class="flip-card-front">
+            <img src="images/founder.png" alt="Mohammed Hadi">
+            <h3>Mohammed Hadi</h3>
+            <p>Founder & CEO</p>
+          </div>
+          <div class="flip-card-back">
+            <h3>Mohammed Hadi</h3>
+            <p>Leading with vision and dedication to drive our company forward.</p>
+            <a href="https://www.linkedin.com/in/hadi4234/" target="_blank" class="linkedin-icon">
+              <b><i class="fab fa-linkedin"></i></b>
+            </a>      
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 2 -->
+      <div class="team-member">
+        <div class="flip-card">
+          <div class="flip-card-front">
+            <img src="images/NU.png" alt="Nozom Uddin">
+            <h3>Nozom Uddin</h3>
+            <p>Operations Director</p>
+          </div>
+          <div class="flip-card-back">
+            <h3>Nozom Uddin</h3>
+            <p>Driving innovation and technology solutions for our clients.</p>
+            <a href="https://www.linkedin.com/in/nozomuddin/" target="_blank" class="linkedin-icon">
+              <b><i class="fab fa-linkedin"></i></b>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 3 -->
+      <div class="team-member">
+        <div class="flip-card">
+          <div class="flip-card-front">
+            <img src="images/SApic.png" alt="Shah Amanat">
+            <h3>Shah Amanat</h3>
+            <p>Operations Manager</p>
+          </div>
+          <div class="flip-card-back">
+            <h3>Shah Amanat</h3>
+            <p>Fostering a positive work environment and supporting our talent.</p>
+            <a href="https://www.linkedin.com/in/shah-amanat/" target="_blank" class="linkedin-icon">
+              <b><i class="fab fa-linkedin"></i></b>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 4 -->
+      <div class="team-member">
+        <div class="flip-card">
+          <div class="flip-card-front">
+            <img src="images/T4-SC.jpg" alt="Shakirul Chowdhury">
+            <h3>Shakirul Chowdhury</h3>
+            <p>HR & Finance Manager</p>
+          </div>
+          <div class="flip-card-back">
+            <h3>Shakirul Chowdhury</h3>
+            <p>Ensuring smooth operations through strong financial planning and people management.</p>
+            <a href="https://www.linkedin.com/in/shakirulshariff/" target="_blank" class="linkedin-icon">
+              <b><i class="fab fa-linkedin"></i></b>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 5 -->
+      <div class="team-member">
+        <div class="flip-card">
+          <div class="flip-card-front">
+            <img src="images/RKpic.png" alt="Rafatul Kabir">
+            <h3>Rafatul Kabir</h3>
+            <p>Project Manager</p>
+          </div>
+          <div class="flip-card-back">
+            <h3>Rafatul Kabir</h3>
+            <p>Building scalable and efficient systems that power our solutions</p>
+            <a href="https://www.linkedin.com/in/rafatulck/" target="_blank" class="linkedin-icon">
+              <b><i class="fab fa-linkedin"></i></b>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== Designers ===== -->
+      <!-- Member 6 -->
+      <div class="team-member">
+        <div class="flip-card">
+          <div class="flip-card-front">
+            <img src="images/T6-AR.jpg" alt="Abdur Rahman">
+            <h3>Abdur Rahman</h3>
+            <p>Designer</p>
+          </div>
+          <div class="flip-card-back">
+            <h3>Abdur Rahman</h3>
+            <p>Transforming ideas into creative visuals that bring projects to life.</p>
+            <a href="https://www.linkedin.com/in/mdtaki/" target="_blank" class="linkedin-icon">
+              <b><i class="fab fa-linkedin"></i></b>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 7 -->
+      <div class="team-member">
+        <div class="flip-card">
+          <div class="flip-card-front">
+            <img src="images/T7-SR.jpg" alt="Sadikur Rahman">
+            <h3>Sadikur Rahman</h3>
+            <p>Designer</p>
+          </div>
+          <div class="flip-card-back">
+            <h3>Sadikur Rahman</h3>
+            <p>Crafting user-focused designs with attention to detail and creativity.</p>
+            <a href="https://www.linkedin.com/in/sadikur-rahman-6045a933b/" target="_blank" class="linkedin-icon">
+              <b><i class="fab fa-linkedin"></i></b>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 8 -->
+      <div class="team-member">
+        <div class="flip-card">
+          <div class="flip-card-front">
+            <img src="images/T8-FA.jpg" alt="Faysal">
+            <h3>Faysal Ahmad</h3>
+            <p>Designer</p>
+          </div>
+          <div class="flip-card-back">
+            <h3>Faysal Ahmad</h3>
+            <p>Blending innovation and aesthetics to deliver engaging design solutions.</p>
+            <a href="https://www.linkedin.com/in/faysal-ahmad-24bb20374/" target="_blank" class="linkedin-icon">
+              <b><i class="fab fa-linkedin"></i></b>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== Business Development ===== -->
+      <!-- Member 9 -->
+      <div class="team-member">
+        <div class="flip-card">
+          <div class="flip-card-front">
+            <img src="images/T11-SS.jpg" alt="Saytam">
+            <h3>Saytam Shome</h3>
+            <p>Business Development Manager</p>
+          </div>
+          <div class="flip-card-back">
+            <h3>Saytam Shome</h3>
+            <p>Strengthening partnerships and driving business growth through strategy.</p>
+            <a href="https://www.linkedin.com/in/satyam-shome/" target="_blank" class="linkedin-icon">
+              <b><i class="fab fa-linkedin"></i></b>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 10 -->
+      <div class="team-member">
+        <div class="flip-card">
+          <div class="flip-card-front">
+            <img src="images/T12-AT.jpg" alt="Abu Taher">
+            <h3>Abu Taher</h3>
+            <p>Business Development Executive</p>
+          </div>
+          <div class="flip-card-back">
+            <h3>Abu Taher</h3>
+            <p>Focusing on client relationships and helping the company achieve new milestones.</p>
+            <a href="https://www.linkedin.com/" target="_blank" class="linkedin-icon">
+              <b><i class="fab fa-linkedin"></i></b>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 11 -->
+      <div class="team-member">
+        <div class="flip-card">
+          <div class="flip-card-front">
+            <img src="images/T13-SI.jpg" alt="Shahedul">
+            <h3>Shahedul Islam</h3>
+            <p>Business Development Executive</p>
+          </div>
+          <div class="flip-card-back">
+            <h3>Shahedul Islam</h3>
+            <p>Connecting with clients and creating opportunities to expand our reach.</p>
+            <a href="https://www.linkedin.com/in/shahedul-islam-0a624b2b2/" target="_blank" class="linkedin-icon">
+              <b><i class="fab fa-linkedin"></i></b>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== Marketing ===== -->
+      <!-- Member 12 -->
+      <div class="team-member">
+        <div class="flip-card">
+          <div class="flip-card-front">
+            <img src="images/T14-MA.jpg" alt="Masum">
+            <h3>Masum Ahmed</h3>
+            <p>Marketing Manager</p>
+          </div>
+          <div class="flip-card-back">
+            <h3>Masum Ahmed</h3>
+            <p>Leading campaigns that amplify our brand and connect with our audience.</p>
+            <a href="https://www.linkedin.com/in/masum-ahmed-dev/" target="_blank" class="linkedin-icon">
+              <b><i class="fab fa-linkedin"></i></b>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 13 -->
+      <div class="team-member">
+        <div class="flip-card">
+          <div class="flip-card-front">
+            <img src="images/T15-SMH.jpg" alt="Hamim">
+            <h3>Muhammad Hamim</h3>
+            <p>Social Media Executive</p>
+          </div>
+          <div class="flip-card-back">
+            <h3>Muhammad Hamim</h3>
+            <p>Engaging communities and growing our presence across social platforms.</p>
+            <a href="https://www.linkedin.com/in/s-m-hamim/" target="_blank" class="linkedin-icon">
+              <b><i class="fab fa-linkedin"></i></b>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 14 -->
+      <div class="team-member">
+        <div class="flip-card">
+          <div class="flip-card-front">
+            <img src="images/T16-SM.jpg" alt="Salman Miah">
+            <h3>Salman Miah</h3>
+            <p>Marketing Executive</p>
+          </div>
+          <div class="flip-card-back">
+            <h3>Salman Miah</h3>
+            <p>Supporting campaigns with fresh ideas and delivering measurable results.</p>
+            <a href="https://www.linkedin.com/in/salman-miah/" target="_blank" class="linkedin-icon">
+              <b><i class="fab fa-linkedin"></i></b>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== Web Developers ===== -->
+      <!-- Member 15 -->
+      <div class="team-member">
+        <div class="flip-card">
+          <div class="flip-card-front">
+            <img src="images/T9-AU.jpg" alt="Ayen Uddin">
+            <h3>Ayen Uddin</h3>
+            <p>Web Developer</p>
+          </div>
+          <div class="flip-card-back">
+            <h3>Ayen Uddin</h3>
+            <p>Building reliable and dynamic websites with clean, efficient code.</p>
+            <a href="https://www.linkedin.com/in/ayen-u-0006071b3/" target="_blank" class="linkedin-icon">
+              <b><i class="fab fa-linkedin"></i></b>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 16 -->
+      <div class="team-member">
+        <div class="flip-card">
+          <div class="flip-card-front">
+            <img src="images/T10-BD.jpg" alt="Bidyut">
+            <h3>Bidyut Das</h3>
+            <p>Junior Web Developer</p>
+          </div>
+          <div class="flip-card-back">
+            <h3>Bidyut Das</h3>
+            <p>Learning and growing while contributing to modern web development projects.</p>
+            <a href="https://www.linkedin.com/in/bidyut-das070/" target="_blank" class="linkedin-icon">
+              <b><i class="fab fa-linkedin"></i></b>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- ===== Our Values Section ===== -->
+  <section class="values-section">
+    <div class="container">
+      <h2 class="section-title">Our Values</h2>
+      <div class="values-grid ">
+        <div class="value-card animate-rotate-fade"> <!-- Animation class added -->
+          <h3>Innovation</h3>
+          <p>We embrace creativity and always look for new ways to improve.</p>
+        </div>
+        <div class="value-card animate-rotate-fade"> <!-- Animation class added -->
+          <h3>Collaboration</h3>
+          <p>Teamwork and open communication are at the heart of our culture.</p>
+        </div>
+        <div class="value-card animate-rotate-fade"> <!-- Animation class added -->
+          <h3>Integrity</h3>
+          <p>We act with honesty and accountability in everything we do.</p>
+        </div>
+        <div class="value-card animate-rotate-fade"> <!-- Animation class added -->
+          <h3>Customer Focus</h3>
+          <p>Our clients’ needs drive our decisions and inspire our solutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================== Footer Section Start ================== -->
+    <footer>
+        <div class="footer">
+            <div class="footer-container">
+              <!-- Column 1: Logo -->
+                <div class="footer-logo">
+                  <div>
+                    <h3>ABOUT US</h3>
+                    <p>We believe in forming relationships in a positive, simple and effective manner and that is how we like to manage our customer’s requirements.</p>
+                    <a href="index.html">
+                        <img src="images/cr8ease-main-logo.png" alt="CR8 Logo">
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Column 2: Our Services -->
+                <div class="footer-services">
+                    <h3>USEFUL LINKS</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="terms.html">Website Terms</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Useful Links -->
+                <div class="footer-links">
+                    <h3>SERVICES</h3>
+                    <ul>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="business.html">Business</a></li>
+                        <li><a href="custom.html">Custom</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Social Icons -->
+                <div class="footer-contact">
+                    <h3>CONTACT US</h3> 
+                        <!-- Address lines -->
+                    <div class="footer-address">
+                        <p>Suite 101, Earl Business Centre,</p>
+                        <p>Dowry Street, Oldham, OL8 2PF</p>
+                        <p>T: 0161 284 1085</p>
+                        <p>E: info@cr8ease.com</p>
+                    </div>
+
+                        <!-- Social icons -->
+                    
+                  <div class="footer-social">                        
+                      <a href="https://www.facebook.com/profile.php?id=61578418095194"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="https://www.linkedin.com/company/cr8ease"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+            </div>
+              
+        </div>
+
+        <!-- Bottom Mini-Bar -->
+        <div class="footer-bottom">
+        © 2025 Voktis Ltd T/A as Cr8 Ease. All rights reserved.
+        </div>
+    </footer>
+  <!-- ================== Footer Section End ================== -->
+  
+
+  <!-- JS -->  <!-- ====== Back to Top Icon Start ====== -->
+   <a href="#top" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+  <!-- ====== Back to Top Icon End ====== -->
+
+  
+  <!-- JS -->
+    <script src="js/main.js"></script>
+<script>
+const searchInput = document.getElementById('site-search');
+const searchResults = document.getElementById('search-results');
+
+if (searchInput && searchResults) { // Only run if search exists on the page
+
+    let siteData = [];
+
+    // Fetch search JSON
+    fetch('search-data.json')
+        .then(res => res.json())
+        .then(data => { siteData = data; })
+        .catch(err => console.error('Failed to load JSON:', err));
+
+    searchInput.addEventListener('input', () => {
+        const query = searchInput.value.trim().toLowerCase();
+        searchResults.innerHTML = '';
+
+        if (!query) return;
+
+        let resultsFound = false;
+        const addedResults = new Set();
+
+        siteData.forEach(page => {
+
+            function addResult(displayText) {
+                const key = `${page.page}-${displayText}`;
+                if (!addedResults.has(key)) {
+                    // Link to the page with highlight query
+                    const link = `${page.page}?highlight=${encodeURIComponent(displayText)}`;
+                    searchResults.innerHTML += `<li><a href="${link}">${page.title} | ${displayText}</a></li>`;
+                    addedResults.add(key);
+                    resultsFound = true;
+                }
+            }
+
+            // 1. Page title
+            if (page.title.toLowerCase().includes(query)) addResult(page.title);
+
+            // 2. Headings
+            if (page.headings) {
+                page.headings.forEach(h => {
+                    if (h.text.toLowerCase().includes(query)) addResult(h.text);
+                });
+            }
+
+            // 3. Main content
+            if (page.mainContent) {
+                page.mainContent.forEach(p => {
+                    if (p.toLowerCase().includes(query)) {
+                        const snippet = p.length > 60 ? p.substring(0, 60) + "..." : p;
+                        addResult(snippet);
+                    }
+                });
+            }
+
+            // 4. Tags
+            if (page.tags) {
+                page.tags.forEach(tag => {
+                    if (tag.toLowerCase().includes(query)) addResult(`Tag: ${tag}`);
+                });
+            }
+
+            // 5. Author
+            if (page.author && page.author.name) {
+                if (page.author.name.toLowerCase().includes(query)) addResult(`Author: ${page.author.name}`);
+            }
+
+            // 6. Testimonials
+            if (page.testimonials) {
+                page.testimonials.forEach(t => {
+                    if (t.toLowerCase().includes(query)) {
+                        const snippet = t.length > 60 ? t.substring(0, 60) + "..." : t;
+                        addResult(`Testimonial: ${snippet}`);
+                    }
+                });
+            }
+        });
+
+        if (!resultsFound) searchResults.innerHTML = '<li>No results found</li>';
+    });
+}
+
+</script>
+</body>
+
+</html>
