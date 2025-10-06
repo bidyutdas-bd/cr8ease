@@ -4,6 +4,23 @@
 
 
 document.addEventListener("DOMContentLoaded", () => {
+
+
+
+    //Back to the Top Arrow sign
+
+  const backToTopButton = document.querySelector(".back-to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 80) { // Show after 200px scroll
+    backToTopButton.classList.add("show");
+  } else {
+    backToTopButton.classList.remove("show");
+  }
+});
+
+
+
   // =========================
   // Animate elements on scroll
   // =========================
@@ -182,6 +199,89 @@ window.addEventListener('resize', ()=>{
     });
   }
 
+// ======= Search Functionality =======
+// ======= Search Functionality =======
+const searchInput = document.getElementById('site-search');
+const searchResults = document.getElementById('search-results');
+
+if (searchInput && searchResults) { // Only run if search exists on the page
+
+    let siteData = [];
+
+    // Fetch search JSON
+    fetch('search-data.json')
+        .then(res => res.json())
+        .then(data => { siteData = data; })
+        .catch(err => console.error('Failed to load JSON:', err));
+
+    searchInput.addEventListener('input', () => {
+        const query = searchInput.value.trim().toLowerCase();
+        searchResults.innerHTML = '';
+
+        if (!query) return;
+
+        let resultsFound = false;
+        const addedResults = new Set();
+
+        siteData.forEach(page => {
+
+            function addResult(displayText) {
+                const key = `${page.page}-${displayText}`;
+                if (!addedResults.has(key)) {
+                    // Link to the page with highlight query
+                    const link = `${page.page}?highlight=${encodeURIComponent(displayText)}`;
+                    searchResults.innerHTML += `<li><a href="${link}">${page.title} | ${displayText}</a></li>`;
+                    addedResults.add(key);
+                    resultsFound = true;
+                }
+            }
+
+            // 1. Page title
+            if (page.title.toLowerCase().includes(query)) addResult(page.title);
+
+            // 2. Headings
+            if (page.headings) {
+                page.headings.forEach(h => {
+                    if (h.text.toLowerCase().includes(query)) addResult(h.text);
+                });
+            }
+
+            // 3. Main content
+            if (page.mainContent) {
+                page.mainContent.forEach(p => {
+                    if (p.toLowerCase().includes(query)) {
+                        const snippet = p.length > 60 ? p.substring(0, 60) + "..." : p;
+                        addResult(snippet);
+                    }
+                });
+            }
+
+            // 4. Tags
+            if (page.tags) {
+                page.tags.forEach(tag => {
+                    if (tag.toLowerCase().includes(query)) addResult(`Tag: ${tag}`);
+                });
+            }
+
+            // 5. Author
+            if (page.author && page.author.name) {
+                if (page.author.name.toLowerCase().includes(query)) addResult(`Author: ${page.author.name}`);
+            }
+
+            // 6. Testimonials
+            if (page.testimonials) {
+                page.testimonials.forEach(t => {
+                    if (t.toLowerCase().includes(query)) {
+                        const snippet = t.length > 60 ? t.substring(0, 60) + "..." : t;
+                        addResult(`Testimonial: ${snippet}`);
+                    }
+                });
+            }
+        });
+
+        if (!resultsFound) searchResults.innerHTML = '<li>No results found</li>';
+    });
+}
 
 
 
