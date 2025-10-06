@@ -2656,6 +2656,29 @@ body {
   transform: translateY(-3px);
 }
 
+/*Education, Business & Custom Page Prize Button Size according to Device */
+@media (max-width: 1024px) {
+
+ .home-btn { padding: 10px 22px; font-size: 0.95rem; }
+}
+
+@media (max-width: 768px) {
+
+ .home-btn { padding: 8px 20px; font-size: 0.9rem; }
+}
+
+@media (max-width: 480px) {
+
+ .home-btn { padding: 6px 18px; font-size: 0.85rem; }
+}
+
+@media (max-width: 300px) {
+
+ .home-btn { padding: 5px 15px; font-size: 0.75rem; }
+}
+
+
+
 /* Responsive */
 @media screen and (max-width: 900px) {
   .intro-grid {
@@ -3934,6 +3957,7 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
 
 
 
