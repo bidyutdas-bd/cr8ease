@@ -17,10 +17,19 @@
 
 /* ----- Global styles ----- */
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: ui-sans-serif, system-ui, sans-serif; background: #0c0e1f; color: #ffffff; }
+body { font-family: 'Montserrat', ui-sans-serif, system-ui, sans-serif; background: #0c0e1f; color: #ffffff; }
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 
+/* Global Protection Against Horizontal Overflow */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 /* ===== Header / Navbar ===== */
 .site-header {
@@ -124,7 +133,6 @@ ul { list-style: none; }
 .search-results {
   position: absolute;
   top: 100%; /* just below input */
-  left: 75%;
   right: 0;
   background-color: #f5f5f5;
   
@@ -141,7 +149,7 @@ ul { list-style: none; }
   padding: 10px 15px;
   text-decoration: none;
   color: #142434;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #142434
 }
 
 .search-results a:last-child {
@@ -152,6 +160,38 @@ ul { list-style: none; }
   background-color: #1ba6cc;
   color: #fff;
 }
+.search-results::-webkit-scrollbar {
+  width: 6px;
+}
+.search-results::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+
+
+/* ===== No Results Found Style ===== */
+.search-results li {
+  list-style: none;
+  padding: 10px 15px;
+  color: #142434;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.search-results li:last-child {
+  border-bottom: none;
+}
+
+
+/* Highlighted search keyword */
+/* .search-results mark {
+  background-color: #22cefe;  
+  color: #0c0e1f;            
+  font-weight: 600;
+  padding: 0 2px;
+  border-radius: 2px;
+} */
+
 
 /* Search results End */
 
@@ -206,7 +246,7 @@ ul { list-style: none; }
   gap: 6px;
 }
 
-  .nav-list {
+  /* .nav-list {
     display: none;
     flex-direction: column;
     gap: 12px;
@@ -218,7 +258,7 @@ ul { list-style: none; }
     top: 72px;
     right: 0;
     width: 200px;
-  }
+  } */
   
   .search-container { width: 100%; justify-content: center; margin-top: 8px; }
   .nav-toggle { display: block; }
@@ -272,7 +312,7 @@ ul { list-style: none; }
   gap: 6px;
 }
 
-  .nav-list {
+  /* .nav-list {
     display: none;
     flex-direction: column;
     gap: 12px;
@@ -285,8 +325,9 @@ ul { list-style: none; }
     right: 0;
     width: 200px;
   }
-  
+   */
   .search-container { width: 100%; justify-content: center; margin-top: 8px; }
+  .search-input {width: 70%;}
   .nav-toggle { display: block; }
 
   /* Show cross and hide burger when menu is open */
@@ -342,7 +383,7 @@ ul { list-style: none; }
   gap: 6px;
 }
 
-  .nav-list {
+  /* .nav-list {
     display: none;
     flex-direction: column;
     gap: 4px;
@@ -355,7 +396,7 @@ ul { list-style: none; }
     right: 0;
     width: 200px;
   }
-  
+   */
   .logo img {
   margin-top: 6px;
   height: 30px;
@@ -363,8 +404,9 @@ ul { list-style: none; }
   
   align-items: center;
 }
-  .search-container { width: 50%; justify-content: center; margin-top: 8px; }
-  .search-input {max-width: 50%;}
+  .search-wrapper{max-width: 50%;}
+  .search-container { width: 80%; justify-content: center; margin-top: 8px; }
+  .search-input {max-width: 60%;}
   .nav-toggle { display: block; }
 
   /* Show cross and hide burger when menu is open */
@@ -812,7 +854,6 @@ body {
   margin-bottom: 15px;
   position: relative;
 }
-
 .services .section-header h2::after {
   content: '';
   display: block;
@@ -822,7 +863,6 @@ body {
   margin: 10px auto 0;
   border-radius: 2px;
 }
-
 .services .section-header p {
   font-size: 1.1rem;
   color: #fff;
@@ -830,14 +870,12 @@ body {
   margin: 0 auto 60px auto;
   line-height: 1.6;
 }
-
 /* Grid Layout */
 .service-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
-
 /* Individual Card */
 .service-card {
   background: #0c0e1f;
@@ -847,12 +885,10 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
-
 .service-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 30px rgba(0,0,0,0.5);
 }
-
 /* Image inside card */
 .service-card img {
   width: 100%;
@@ -860,30 +896,34 @@ body {
   object-fit: cover;
   transition: transform 0.3s ease;
 }
-
 .service-card:hover img {
   transform: scale(1.05);
 }
-
 /* Card Content */
 .service-info {
   padding: 20px;
 }
-
 .service-info h3 {
   font-size: 1.5rem;
   color: #1ba6cc;
   margin-bottom: 15px;
 }
-
+.service-info h4 {
+  font-size: 1rem;
+  color: #1ba6cc;
+  margin-bottom: 10px;
+}
+.service-info h4:hover {
+  color: #fff;           /* change color on hover */
+  transition: color 0.3s ease; /* smooth transition */
+}
 .service-info p {
   font-size: 1rem;
   color: #ddd;
   margin-bottom: 15px;
   line-height: 1.6;
 }
-
-.service-info a {
+/* .service-info a {
   display: inline-block;
   font-size: 0.95rem;
   font-weight: 600;
@@ -891,10 +931,9 @@ body {
   text-decoration: none;
   transition: color 0.3s ease;
 }
-
 .service-info a:hover {
   color: #fff;
-}
+} */
 
 /* Responsive */
 @media (max-width: 1024px) {
@@ -1096,14 +1135,21 @@ body {
   margin-bottom: 15px;
   color: #1ba6cc;
 }
-
+.blog-info h4 {
+  font-size: 1rem;
+  color: #1ba6cc;
+}
+.blog-info h4:hover {
+  color: #fff;           /* change color on hover */
+  transition: color 0.3s ease; /* smooth transition */
+}
 .blog-info p {
   font-size: 1rem;
   line-height: 1.6;
   color: #ffffff;
 }
 
-.blog-info a {
+/* .blog-info a {
   display: inline-block;
   margin-top: 10px;
   font-size: 0.95rem;
@@ -1115,7 +1161,7 @@ body {
 
 .blog-info a:hover {
   color: #fff;
-}
+} */
 
 /* Responsive */
 @media (max-width: 1024px) {
@@ -1212,7 +1258,7 @@ body {
 .footer h3 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  color: #fff;
+  color: #1BA6CC;
   text-align: center;
 }
 
@@ -1395,7 +1441,7 @@ body {
 .contact-hero h1 {
   font-size: 3rem;
   margin: 0.5rem 0;
-  color: #1ba6cc; /* brand color */
+  color: #fff; /* brand color */
 }
 
 .contact-hero p {
@@ -1626,7 +1672,7 @@ body {
   font-size: 2.8rem;
   font-weight: 700;
   margin: 0;
-  color: #1ba6cc;
+  color: #1BA6CC;
 }
 
 .about-banner .banner-content p {
@@ -1638,33 +1684,34 @@ body {
 
 
 /* ===== SECTION 1: BUILDING ONLINE PRESENCE ===== */
-.our-story {
+.online-presence {
   padding: 80px 20px;
-  background: #0C0E1F;
+  background: #142434;
   color: #fff;
-  text-align: center;
+  text-align: left;
   
 }
 
-.our-story h2 {
+.online-presence h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #fff;
+  color: #1BA6CC;
+  
 }
 
-.our-story p {
+.online-presence p {
   font-size: 1.1rem;
   line-height: 1.6;
   max-width: 1200px;
   margin: 0 auto 20px auto;
-  text-align: left;
+  
 }
 
 
 /* ===== SECTION 2: WE BELIEVE IN OPPORTUNITY ===== */
 .opportunity-section {
   padding: 80px 20px;
-  background: #e8edee; /* Slightly different blue */
+  background: #e8edee;
   color: #000;
 }
 
@@ -1702,22 +1749,61 @@ body {
 .opportunity-text ul li {
   font-size: 1.05rem;
   margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
 }
 
 .opportunity-text ul li::before {
-  content: '✔ ';
+  content: '✔';
   color: #1ba6cc;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .opportunity-image {
-  flex: 1 1 400px;
+  flex: 1 1 500px;
+  display: flex;
+  justify-content: center;
 }
 
 .opportunity-image img {
   width: 100%;
+  max-width: 500px; /* bigger on large screens */
   border-radius: 10px;
   object-fit: cover;
 }
+
+/* ===== Responsive Adjustments ===== */
+@media screen and (max-width: 900px) {
+  .opportunity-container {
+    flex-direction: column;
+    gap: 20px; /* reduce vertical gap */
+    text-align: center;
+  }
+
+  .opportunity-text {
+    flex: 1 1 100%;
+  }
+
+  .opportunity-text h2 {
+    font-size: 2rem;
+  }
+
+  .opportunity-text p {
+    font-size: 1rem;
+  }
+
+  .opportunity-image {
+    flex: 1 1 100%;
+  }
+
+  .opportunity-image img {
+    max-width: 500px; /* slightly smaller on mobile */
+  }
+}
+
+
 
 /* ===== OUR STORY SECTION ===== */
 .our-story {
@@ -1733,6 +1819,8 @@ body {
   margin: 0 auto;
   flex-wrap: wrap;
   align-items: center;
+  text-align: left;
+  
 }
 
 .story-content {
@@ -1743,14 +1831,13 @@ body {
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #fff; /* heading in white */
-  text-align: center; /* centered heading */
+  
 }
 
 .story-content p {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 15px;
-  text-align: left;
   color: #fff; /* paragraph text in white */
 }
 
@@ -1795,46 +1882,60 @@ body {
 
 
 /* ================== Education Page CSS Start ================== */
+/* Global Protection Against Horizontal Overflow */
+/* html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
+* {
+  box-sizing: border-box;
+} */
+
+/* img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+} */
 
 
 /* Education Banner */
-.education-banner {
+/* .education-banner {
   position: relative;
   width: 100%;
-  height: 560px; /* Adjust height as needed */
+  height: 560px; 
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 }
 
-/* The image fills the section */
+
 .education-banner .banner-img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* ensures image covers section */
+  object-fit: cover; 
   z-index: 1;
 }
 
-/* Overlay for dark effect */
+
 .education-banner .banner-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: rgba(12, 14, 31, 0.6); */
+  
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 2;
 }
 
-/* Content text */
+
 .education-banner .banner-content {
   position: relative;
   text-align: center;
@@ -1847,14 +1948,14 @@ body {
   font-size: 2.8rem;
   font-weight: 700;
   margin: 0;
-  color: #1ba6cc; /* Brand color */
+  color: #1ba6cc; 
 }
 
 .education-banner .banner-content p {
   font-size: 1.2rem;
   margin-top: 10px;
   color: #fff;
-}
+} */
 
 
 /* =========================
@@ -1874,6 +1975,7 @@ body {
 .education-intro .container {
   max-width: 1200px;
   margin: 0 auto;
+  text-align: left;
 }
 
 .education-intro h2 {
@@ -1996,20 +2098,22 @@ body {
 }
 
 .education-benefits .container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
+  text-align: left;
 }
 
 .education-benefits h2 {
   font-size: 2rem;
   margin-bottom: 25px;
   color: #1ba6cc;
+  
 }
 
 .education-benefits p {
   font-size: 1.1rem;
   line-height: 1.6;
-  text-align: justify;
+  
 }
 
 /* ================== Education Page CSS End ================== */
@@ -2020,11 +2124,11 @@ body {
 
 
 
-/* Business Banner */
+Business Banner
 .business-banner {
   position: relative;
   width: 100%;
-  height: 560px; /* Adjust height as needed */
+  height: 560px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2078,30 +2182,24 @@ body {
 
 
 
-/* ===== BUSINESS INTRO ===== */
+/* ===== BUSINESS INTRO (SAME DESIGN AS OPPORTUNITY) ===== */
 .business-intro {
   padding: 80px 20px;
-  background: #0C0E1F;  /* Dark background */
-  color: #fff;           /* White text */
-}
-
-.business-intro .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  background: #0C0E1F; /* Dark background */
+  color: #fff;
 }
 
 .business-intro-container {
   display: flex;
   gap: 40px;
-  flex-wrap: wrap;         /* stack on smaller screens */
-  align-items: center;     /* vertical alignment relative to tallest item */
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .business-intro-text {
   flex: 1 1 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* vertical centre relative to image */
   text-align: left;
 }
 
@@ -2125,43 +2223,53 @@ body {
 .business-intro-text ul li {
   font-size: 1.05rem;
   margin-bottom: 10px;
-}
-
-.business-intro-text ul li::before {
-  content: '✔ ';
-  color: #1ba6cc;
+  position: relative;
+  padding-left: 25px;
 }
 
 .business-intro-image {
-  flex: 1 1 400px;
+  flex: 1 1 500px;
   display: flex;
-  justify-content: center; 
-  align-items: center;      /* vertical centre relative to text */
+  justify-content: center;
 }
 
 .business-intro-image img {
   width: 100%;
-  max-width: 500px;
-  height: auto;             /* maintain aspect ratio */
+  max-width: 500px; /* same as opportunity image */
   border-radius: 10px;
   object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
+/* ===== Responsive Adjustments ===== */
+@media screen and (max-width: 900px) {
   .business-intro-container {
-    flex-direction: column;  /* stack text + image */
+    flex-direction: column;
+    gap: 20px;
     text-align: center;
   }
 
   .business-intro-text {
-    text-align: center;
+    flex: 1 1 100%;
+  }
+
+  .business-intro-text h2 {
+    font-size: 2rem;
+  }
+
+  .business-intro-text p {
+    font-size: 1rem;
+  }
+
+  .business-intro-image {
+    flex: 1 1 100%;
   }
 
   .business-intro-image img {
-    max-width: 100%;
+    max-width: 500px; /* slightly smaller on mobile */
   }
 }
+
 
 
 
@@ -2265,11 +2373,11 @@ body {
   padding: 80px 20px;
   background: #142434;
   color: #fff;
-  text-align: center;
+  text-align: left;
 }
 
 .business-benefits .container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -2365,7 +2473,7 @@ body {
 
 /* Custom Section Full Width Background */
 .custom-intro {
-  width: 100%;
+  max-width: 100%;
   background: #142434;
   padding: 80px 0; /* vertical padding */
 }
@@ -2374,7 +2482,9 @@ body {
 .custom-container {
   max-width: 1200px;
   margin: 0 auto; /* centers content */
-  padding: 0 20px; /* horizontal padding */
+  padding: 0 20px; 
+  /* horizontal padding */
+  
 }
 
 /* Grid Layout */
@@ -2389,8 +2499,9 @@ body {
 .intro-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   color: #fff;
+  text-align: left;
 }
 
 .intro-text h2 {
@@ -3671,7 +3782,7 @@ body {
 
 .hero-slider-content h1 {
   font-size: 2.5rem;
-  color: #22cefe;
+  color: #fff;
   margin-bottom: 10px;
 }
 
@@ -3683,7 +3794,7 @@ body {
 
 /* ===== Slider Button ===== */
 .hero-slider-btn {
-  background: #1ba6cc;
+  background: #1BA6CC;
   border: 2px solid #1ba6cc;
   color: #fff;
   padding: 12px 24px;
@@ -3728,4 +3839,46 @@ body {
 
 
 /* ==================Slider Banner End ================== */
+
+
+
+
+/* ================== Back to Top Button ================== */
+.back-to-top {
+  position: fixed !important;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: #1ba6cc;
+  color: #fff;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 99999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.back-to-top:hover {
+  background: #0c94b5;
+  transform: translateY(-3px);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
 
