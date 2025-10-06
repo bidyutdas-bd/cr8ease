@@ -676,7 +676,30 @@ html, body {
   border: 2px solid #1ba6cc;
   color: #1ba6cc;
 }
+/*Home_Hero Button Size according to Device */
+@media (max-width: 1024px) {
 
+  .btn-primary,
+.btn-secondary { padding: 10px 22px; font-size: 0.95rem; }
+}
+
+@media (max-width: 768px) {
+
+  .btn-primary,
+.btn-secondary { padding: 8px 20px; font-size: 0.9rem; }
+}
+
+@media (max-width: 480px) {
+
+  .btn-primary,
+.btn-secondary { padding: 6px 18px; font-size: 0.85rem; }
+}
+
+@media (max-width: 300px) {
+
+  .btn-primary,
+.btn-secondary { padding: 5px 15px; font-size: 0.75rem; }
+}
 /* Right Column */
 .hero-right {
   flex: 1 1 500px;
@@ -3890,5 +3913,6 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
 
 
