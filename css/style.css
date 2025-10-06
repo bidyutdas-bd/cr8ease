@@ -1308,6 +1308,27 @@ body {
   transform: scale(1.05);    /* Keep the scale effect */
 }
 
+/*CTA Button Size according to Device */
+@media (max-width: 1024px) {
+
+ .cta-button { padding: 10px 22px; font-size: 0.95rem; }
+}
+
+@media (max-width: 768px) {
+
+ .cta-button { padding: 8px 20px; font-size: 0.9rem; }
+}
+
+@media (max-width: 480px) {
+
+ .cta-button { padding: 6px 18px; font-size: 0.85rem; }
+}
+
+@media (max-width: 300px) {
+
+ .cta-button { padding: 5px 15px; font-size: 0.75rem; }
+}
+
 #particles {
   position: absolute;
   top: 0;
@@ -3913,6 +3934,7 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
 
 
 
