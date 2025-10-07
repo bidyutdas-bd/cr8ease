@@ -700,6 +700,9 @@ html, body {
   .btn-primary,
 .btn-secondary { padding: 5px 15px; font-size: 0.75rem; }
 }
+
+
+
 /* Right Column */
 .hero-right {
   flex: 1 1 500px;
@@ -1308,7 +1311,7 @@ body {
   transform: scale(1.05);    /* Keep the scale effect */
 }
 
-/*CTA Button Size according to Device */
+/*CTA Button Size accorfing to Device */
 @media (max-width: 1024px) {
 
  .cta-button { padding: 10px 22px; font-size: 0.95rem; }
@@ -2656,7 +2659,7 @@ body {
   transform: translateY(-3px);
 }
 
-/*Education, Business & Custom Page Prize Button Size according to Device */
+/*Education,Business & Custom Page Prize Button Size according to Device */
 @media (max-width: 1024px) {
 
  .home-btn { padding: 10px 22px; font-size: 0.95rem; }
@@ -2676,7 +2679,6 @@ body {
 
  .home-btn { padding: 5px 15px; font-size: 0.75rem; }
 }
-
 
 
 /* Responsive */
@@ -3957,9 +3959,5 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
-
-
-
 
 
